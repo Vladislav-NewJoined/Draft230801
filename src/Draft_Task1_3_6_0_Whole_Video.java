@@ -1,7 +1,57 @@
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStream;
+import java.io.InputStreamReader;
+import java.net.URL;
+import java.net.URLConnection;
 import java.util.Scanner;
 
-public class Draft_Task1_3_6_0_Whole_Video {
-    public static void main(String[] args) {
+public class MyClass22 {  //  itunes ДжейСон JSON
+    public static void main(String[] args) throws IOException {
+        String term = getUserInput();
+        String url = buildUrl(term);
+        String page = downLoadWebPage(url);
+        printResult(page);
+    }
+    static void printResult(String page) {
+        int start = page.indexOf("wrapperType") + 14;
+        int end = page.indexOf("\",", start);
+
+        StringBuilder result = new StringBuilder();
+        String wrapperType = page.substring(start, end);
+
+        if (wrapperType.equals("audiobook")) {
+            result = buildBookResult(page);
+        } else if (wrapperType.equals("track")) {
+            String kind = getKind(page) ;
+            if (kind.equals("song")) {
+                result = buildSongInformotion(page);
+            } else if (kind.equals("feature-movie")) {
+                result = buildMovielnformation(page);
+            }
+
+
+        String wrapperType = getWrapperTgpeipage);
+        StringBuitder result = new StringBuilder();
+        }
+        if (result.length() == 0) {
+            result.append("Unknown result: "); result.append(page);
+        }
+        System.out.println(result.toStrin());
+
+    }
+}
+//        Конец Примера 1 КККККККККККККККК
+
+
+
+
+//        Пример _ ППППППППППППППППППППППППППППППППППП
+//import java.io.IOException;
+//import java.util.Scanner;
+//
+//public class Draft_Task1_3_6_0_Whole_Video {
+//    public static void main(String[] args) {
         //  Урок 6. Операторы Continue, break
         //  видео мин 03 01 - найти певый элемент массива, кот. больше 10-ти
         //  видео мин 04 30 - вывести только первое слово
@@ -60,22 +110,22 @@ public class Draft_Task1_3_6_0_Whole_Video {
 //        }
 
 
-        //  видео мин 11 04 - вывести все заглавные символы со StringBuilder
-        Scanner scanner = new Scanner(System.in);
-        String line = scanner.nextLine();
-        StringBuilder builder = new StringBuilder(line);
-        int count = 0;
-        for (int i=0; i<builder.length(); i++) {
-            char ch = builder.charAt(i);
-            if (Character.isLowerCase(ch)) {
-                continue;
-            }
-            char small = Character.toLowerCase(ch);
-            builder.deleteCharAt(i);
-            builder.insert(i, small);
-            count++;
-        }
-        System.out.println("There is " + count + " not-lowercase symbols");
-        System.out.println(builder.toString());
-    }
-}
+//        //  видео мин 11 04 - вывести все заглавные символы со StringBuilder
+//        Scanner scanner = new Scanner(System.in);
+//        String line = scanner.nextLine();
+//        StringBuilder builder = new StringBuilder(line);
+//        int count = 0;
+//        for (int i=0; i<builder.length(); i++) {
+//            char ch = builder.charAt(i);
+//            if (Character.isLowerCase(ch)) {
+//                continue;
+//            }
+//            char small = Character.toLowerCase(ch);
+//            builder.deleteCharAt(i);
+//            builder.insert(i, small);
+//            count++;
+//        }
+//        System.out.println("There is " + count + " not-lowercase symbols");
+//        System.out.println(builder.toString());
+//        Конец Примера _ КККККККККККККККК
+
