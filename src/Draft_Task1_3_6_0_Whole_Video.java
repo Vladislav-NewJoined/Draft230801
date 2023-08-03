@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class Draft_Whole_Video1_3_6_0 {
+public class Draft_Task1_3_6_0_Whole_Video {
     public static void main(String[] args) {
         //  Урок 6. Операторы Continue, break
         //  видео мин 03 01 - найти певый элемент массива, кот. больше 10-ти
