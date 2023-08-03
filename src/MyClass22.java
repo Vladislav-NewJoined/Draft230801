@@ -6,19 +6,36 @@ import java.net.URL;
 import java.net.URLConnection;
 import java.util.Scanner;
 
-
-////        Пример 2 ППППППППППППППППППППППППППППППППППП //  itunes ДжейСон JSON
-//public class MyClass22 {  //  itunes ДжейСон JSON
+//public class MyClass22 {   //  itunes ДжейСон JSON_2
 //    public static void main(String[] args) throws IOException {
 //        String term = getUserInput();
 //        String url = buildUrl(term);
 //        String page = downLoadWebPage(url);
 //        printResult(page);
 //    }
+//
 //    static void printResult(String page) {
 //        int start = page.indexOf("wrapperType") + 14;
 //        int end = page.indexOf("\",", start);
+//        System.out.println(page.substring(start, end));
+//    }
 //
+//    static String buildUrl(String partOfRequest) {
+//        String termWithoutSpaces = partOfRequest.replaceAll(" ", "")  //  16 51
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//    }
 //        StringBuilder result = new StringBuilder();
 //        String wrapperType = page.substring(start, end);
 //
@@ -33,8 +50,8 @@ import java.util.Scanner;
 //            }
 //
 //
-//        String wrapperType = getWrapperTgpeipage);
-//        StringBuitder result = new StringBuilder();
+//            String wrapperType = getWrapperTgpeipage);
+//            StringBuitder result = new StringBuilder();
 //        }
 //        if (result.length() == 0) {
 //            result.append("Unknown result: "); result.append(page);
@@ -96,15 +113,15 @@ import java.util.Scanner;
 //
 //public class Draft_Task1_3_6_0_Whole_Video {
 //    public static void main(String[] args) {
-        //  Урок 6. Операторы Continue, break
-        //  видео мин 03 01 - найти певый элемент массива, кот. больше 10-ти
-        //  видео мин 04 30 - вывести только первое слово
-        //  видео мин 06 55 - в случае с вложенными циклами
-        //  видео мин 07 16 - оператор continue
-        //  видео мин 09 40 - вывести только нечетные числа
-        //  видео мин 11 04 - вывести все заглавные символы со StringBuilder
+//  Урок 6. Операторы Continue, break
+//  видео мин 03 01 - найти певый элемент массива, кот. больше 10-ти
+//  видео мин 04 30 - вывести только первое слово
+//  видео мин 06 55 - в случае с вложенными циклами
+//  видео мин 07 16 - оператор continue
+//  видео мин 09 40 - вывести только нечетные числа
+//  видео мин 11 04 - вывести все заглавные символы со StringBuilder
 
-        // вывести, если больше 10
+// вывести, если больше 10
 //        int[] arr = new int[5];
 //        Scanner scanner = new Scanner(System.in);
 //        System.out.println("Enter array of 5 elements: ");
@@ -119,7 +136,7 @@ import java.util.Scanner;
 //            }
 //        }
 
-        // вывести первое слово
+// вывести первое слово
 //        Scanner scanner = new Scanner(System.in);
 //        System.out.println("Enter line: ");
 //
