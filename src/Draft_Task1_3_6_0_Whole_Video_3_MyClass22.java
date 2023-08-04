@@ -1,12 +1,4 @@
-import java.io.BufferedReader;
-import java.io.IOException;
-import java.io.InputStream;
-import java.io.InputStreamReader;
-import java.net.URL;
-import java.net.URLConnection;
-import java.util.Scanner;
-
-//public class MyClass22 {   //  itunes ДжейСон JSON_2
+//public class Draft_Task1_3_6_0_Whole_Video_4_MyClass22 {   //  itunes ДжейСон JSON_2
 //    public static void main(String[] args) throws IOException {
 //        String term = getUserInput();
 //        String url = buildUrl(term);
@@ -67,7 +59,7 @@ import java.util.Scanner;
 
 //
 ////        Пример 1 ППППППППППППППППППППППППППППППППППП //  itunes ДжейСон JSON
-//public class MyClass22 {  //  itunes ДжейСон JSON
+//public class Draft_Task1_3_6_0_Whole_Video_4_MyClass22 {  //  itunes ДжейСон JSON
 //    public static void main(String[] args) throws IOException {
 //        String term = getUserInput();
 //        String url = buildUrl(term);

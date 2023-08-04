@@ -6,7 +6,7 @@ import java.net.URL;
 import java.net.URLConnection;
 import java.util.Scanner;
 
-public class MyClass22 {   //  itunes ДжейСон JSON_2
+public class Draft_Task1_3_6_0_Whole_Video_4_MyClass22 {   //  itunes ДжейСон JSON_2
     public static void main(String[] args) throws IOException {
         String term = getUserInput();
         String url = buildUrl(term);
@@ -15,12 +15,8 @@ public class MyClass22 {   //  itunes ДжейСон JSON_2
     }
 
     static void/*String*/ /*parseResult*/printResult(String page) {
-        int start = page.indexOf("wrapperType") + 14;  // было /*kind*/  kind + 7
-        int end = page.indexOf("\",", start); //  ищем не с самого начала, а после start
-
+        String wrapperType = getWrapperType(page);
         StringBuilder result = new StringBuilder(); /*result.append("Unknown result: ");  result.append(page);*/
-        String wrapperType = page.substring(start, end);  // System.out.println(page.substring(start, end));
-
         if (wrapperType.equals("audiobook")) {  /*audiobook*/  /*collection*/
             result = buildBookResult(page);
         } else if (wrapperType.equals("track")) {
@@ -31,13 +27,19 @@ public class MyClass22 {   //  itunes ДжейСон JSON_2
                 result = buildMovieInformation(page);
             }
         }
-
         if (result.length() == 0) {
              result.append("Unknown result: ");
              result.append(page);
         }
 
         System.out.println(result.toString());
+    }
+
+    private static String getWrapperType(String page) {
+        int start = page.indexOf("wrapperType") + 14;  // было /*kind*/  kind + 7
+        int end = page.indexOf("\",", start); //  ищем не с самого начала, а после start
+        String wrapperType = page.substring(start, end);  // System.out.println(page.substring(start, end));
+        return wrapperType;
     }
 
     static StringBuilder buildSongInformation(String page) {

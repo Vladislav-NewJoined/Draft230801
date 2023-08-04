@@ -6,7 +6,7 @@ import java.net.URL;
 import java.net.URLConnection;
 import java.util.Scanner;
 
-public class MyClass19 {   //  itunes ДжейСон JSON_2
+public class Draft_Task1_3_6_0_Whole_Video_2_MyClass19 {   //  itunes ДжейСон JSON_2
     public static void main(String[] args) throws IOException {
 
         // userInput
