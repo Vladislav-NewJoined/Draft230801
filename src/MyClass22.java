@@ -14,15 +14,6 @@ public class MyClass22 {   //  itunes ДжейСон JSON_2
         printResult(page);
     }
 
-        // 1. wrapperType ->
-        //
-        //
-        //
-        //
-        //
-        //
-        //
-        //
     static void/*String*/ /*parseResult*/printResult(String page) {
         int start = page.indexOf("wrapperType") + 14;  // было /*kind*/  kind + 7
         int end = page.indexOf("\",", start); //  ищем не с самого начала, а после start
@@ -33,13 +24,11 @@ public class MyClass22 {   //  itunes ДжейСон JSON_2
         if (wrapperType.equals("audiobook")) {  /*audiobook*/  /*collection*/
             result = buildBookResult(page);
         } else if (wrapperType.equals("track")) {
-            start = page.indexOf("kind") + "kind".length() + 3;  // было /*kind*/  kind + 7
-            end = page.indexOf("\",", start); //  ищем не с самого начала, а после start
-            String kind = page.substring(start, end);
+            String kind = getKind(page);
             if(kind.equals("song")) {
-
+                result = buildSongInformation(page);
             } else if (kind.equals("feature-movie")) {
-
+                result = buildMovieInformation(page);
             }
         }
 
@@ -49,6 +38,51 @@ public class MyClass22 {   //  itunes ДжейСон JSON_2
         }
 
         System.out.println(result.toString());
+    }
+
+    static StringBuilder buildSongInformation(String page) {
+        int start, end;
+        StringBuilder result = new StringBuilder();
+        start = page.indexOf("artistName") + "artistName".length() + 3;  // было /*kind*/  kind + 7
+        end = page.indexOf("\",", start); //  ищем не с самого начала, а после start
+        String artistName = page.substring(start, end);
+
+        start = page.indexOf("trackName") + "trackName".length() + 3;  // было /*kind*/  kind + 7
+        end = page.indexOf("\",", start); //  ищем не с самого начала, а после start
+        String trackName = page.substring(start, end);
+
+        result.append("This is a song.\n");
+        result.append(artistName);
+        result.append(" - ");
+        result.append(trackName);
+        return result;
+    }
+
+    static StringBuilder buildMovieInformation(String page) {
+        int start, end;
+        StringBuilder result = new StringBuilder();
+        start = page.indexOf("trackName") + "trackName".length() + 3;  // было /*kind*/  kind + 7
+        end = page.indexOf("\",", start); //  ищем не с самого начала, а после start
+        String movieName = page.substring(start, end);
+
+        start = page.indexOf("longDescription") + "longDescription".length() + 3;  // было /*kind*/  kind + 7
+        end = page.indexOf("\"", start); //  ищем не с самого начала, а после start
+        String movieDescription = page.substring(start, end).replaceAll("<br />", "\n");
+
+        result.append("This is a movie.\n");
+        result.append(movieName);
+        result.append("\nDescription\n");
+        result.append(movieDescription);
+        return result;
+    }
+
+    private static String getKind(String page) {
+        int end;
+        int start;
+        start = page.indexOf("kind") + "kind".length() + 3;  // было /*kind*/  kind + 7
+        end = page.indexOf("\",", start); //  ищем не с самого начала, а после start
+        String kind = page.substring(start, end);
+        return kind;
     }
 
     private static StringBuilder buildBookResult(String page) {
