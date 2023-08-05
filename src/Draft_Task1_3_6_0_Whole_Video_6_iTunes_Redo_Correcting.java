@@ -25,8 +25,8 @@ public class Draft_Task1_3_6_0_Whole_Video_6_iTunes_Redo_Correcting {   //  itun
 
         int moviesCount = 0;
         int currentMovieIndex = 0;
-        while (moviesCount < 10) {
-            currentMovieIndex = page.indexOf("kind\t:\tfeature-movie", currentMovieIndex + 20);
+        while (moviesCount < 5) {
+            currentMovieIndex = page.indexOf("feature-movie", currentMovieIndex + 20);
 
             start = page.indexOf("trackName", currentMovieIndex) + "trackName".length() + 3;  // было /*kind*/  kind + 7
             end = page.indexOf("\",", start); //  ищем не с самого начала, а после start
@@ -40,10 +40,19 @@ public class Draft_Task1_3_6_0_Whole_Video_6_iTunes_Redo_Correcting {   //  itun
             end = page.indexOf("\"", start); //  ищем не с самого начала, а после start
             String movieDescription = page.substring(start, end).replaceAll("<br />", "\n");
 
-            result.append("This is a movie.\n");
-            result.append(movieName);
-            result.append("\nDescription\n");
-            result.append(movieDescription);
+            if (primaryGenreName.equals("Comedy")) {
+                result.append("Finally found comedy.\n");
+                result.append(movieName);
+                result.append("\nDescription\n");
+                result.append(movieDescription);
+                break;
+            } else {
+                result.append("This is a movie.\n");
+                result.append(movieName);
+                result.append("\nDescription\n");
+                result.append(movieDescription + "\n");
+                moviesCount++;
+            }
         }
         return result;
     }
@@ -60,7 +69,7 @@ public class Draft_Task1_3_6_0_Whole_Video_6_iTunes_Redo_Correcting {   //  itun
     static String/*void*/ buildUrl (String partOfRequest) {
         String termWithoutSpaces = /*term*/partOfRequest.replaceAll(" ", "+");
         String itunesApi = "https://itunes.apple.com/search?term="; //  32 41
-        String limitParam = "&limit=100";
+        String limitParam = "&limit=300";
         StringBuilder url = new StringBuilder();
         url.append(itunesApi);
         url.append(termWithoutSpaces);
@@ -90,7 +99,7 @@ public class Draft_Task1_3_6_0_Whole_Video_6_iTunes_Redo_Correcting {   //  itun
 }
 
 
-//  Прервался на мин 27 46 строка 38 урок 1_3_6 https://lms.synergy.ru/student/updiscipline/4474947/1045153/1/1
+//  Прервался на мин 30 10 строка __ урок 1_3_6 https://lms.synergy.ru/student/updiscipline/4474947/1045153/1/1
 //  Используемые материалы:
 //  JSON Beautifier здесь:
 //        JSON Beautifier_Best JSON Viewer and JSON Beautifier Online
@@ -99,7 +108,6 @@ public class Draft_Task1_3_6_0_Whole_Video_6_iTunes_Redo_Correcting {   //  itun
 //        iTunes API здесь:
 //        iTunes API_iTunes Search API: Overview
 //        https://developer.apple.com/library/archive/documentation/AudioVideo/Conceptual/iTuneSearchAPI/index.html
-//        видео мин 21 03 - после feature-movie мы ищем trackNane
 
 
 
