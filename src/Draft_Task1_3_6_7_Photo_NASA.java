@@ -1,6 +1,3 @@
-import java.util.ArrayList;
-import java.util.List;
-import java.util.Scanner;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStream;
@@ -11,7 +8,7 @@ import java.nio.file.Files;
 import java.nio.file.Paths;
 
 //        Пример _ ППППППППППППППППППППППППППППППППППП
-public class Draft_Task1_3_6_7 {
+public class Draft_Task1_3_6_7_Photo_NASA {
     public static void main(String[] args) throws IOException {
         System.out.println("Задание: \n.Сохраняйте снимки NASA с 1 января до того момента, пока в поле Explanation " +
                 "\nнет слова “Earth”\n\nРешение: ");
