@@ -4,19 +4,9 @@ import java.io.InputStream;
 import java.io.InputStreamReader;
 import java.net.URL;
 import java.net.URLConnection;
-import java.nio.file.Files;
-import java.nio.file.Path;
-import java.nio.file.Paths;
-import java.nio.file.StandardCopyOption;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
-import java.time.LocalDateTime;
-import java.time.format.DateTimeFormatter;
 import java.util.Calendar;
-import java.util.Date;
-import java.util.Locale;
-import java.text.ParseException;
-import java.text.SimpleDateFormat;
 import java.util.Date;
 
 //        Пример _ ППППППППППППППППППППППППППППППППППП
@@ -25,53 +15,51 @@ import java.util.Date;
 //  УТИЛИТА, КАК СКАЧАТЬ ФОТО NASA_Module1_Tema1_Urok9 видео мин 22.00, НО ЗДЕСЬ БЕЗ ДАТЫ
 public class Draft_Task1_3_6_7_Photo_NASA_РАБОТАЕТ_С_ДАТОЙ {
     public static void main(String[] args) throws IOException, ParseException {
-        System.out.println("Задание: \n.Сохраняйте снимки NASA с 1 января до того момента, пока в поле Explanation " +
-                "\nнет слова “Earth”\n\nРешение: ");
+        System.out.println("Задание: \n7. Сохраняйте снимки NASA с 1 января до того момента, пока в поле Explanation " +
+                "нет слова “Earth”\n\nРешение: ");
 
-        String date_s = "2022/03/15";
-        System.out.println("Было: " + date_s);
-        SimpleDateFormat dt = new SimpleDateFormat("yyyy/MM/dd");
-        try {
-            Date date = dt.parse(date_s);
-            SimpleDateFormat dt1 = new SimpleDateFormat("yyyy-MM-dd");
-            String result = dt1.format(date);
-            System.out.println("Стало: " + result);
-        } catch (ParseException e) {
-            e.printStackTrace();
+        for (int i = 0; i < 2; i++) {
+            System.out.println("ИТЕРАЦИЯ " + (i+1));
+
+            String dateBegin_NO_Format = "2022/12/31";
+            System.out.println("Было dateBegin_NO_Format: " + dateBegin_NO_Format);
+            dateFormat_Begin(dateBegin_NO_Format);  //  Форматируем дату
+
+            final SimpleDateFormat format = new SimpleDateFormat("yyyy/MM/dd");
+            final Date date = format.parse(dateBegin_NO_Format);
+            final Calendar calendar = Calendar.getInstance();
+            calendar.setTime(date);
+            calendar.add(Calendar.DAY_OF_YEAR, 1);
+            String dateNext_NO_Format = format.format(calendar.getTime());
+            System.out.println("Была следующ. дата в цикле НЕ В ФОРМАТЕ: " + dateNext_NO_Format);
+            dateFormat_Next(dateNext_NO_Format);  //  Форматируем дату
+
+            System.out.println(); //  перенос строки
         }
 
-        System.out.println(); //  перенос строки
 
-        String dateBegin = "2022/12/31";
-        System.out.println("Была dateBegin: " + dateBegin);
-        final SimpleDateFormat format = new SimpleDateFormat("yyyy/MM/dd");
-        final Date date = format.parse(dateBegin);
-        final Calendar calendar = Calendar.getInstance();
-        calendar.setTime(date);
-        calendar.add(Calendar.DAY_OF_YEAR, 1);
-        String nextDateWrongFormat = format.format(calendar.getTime());
-        dateBegin = nextDateWrongFormat;
-        System.out.println(nextDateWrongFormat);
-        System.out.println("Стала dateBegin: " + dateBegin);
 
-        String pageNasa = downloadWeBPage("https://api.nasa.gov/planetary/apod?api_key=DEMO_KEY&date=2019-10-14"); //  ВОТ ЗДЕСЬ ЗАДАЕТСЯ ДАТА
-        int urlBegin = pageNasa.lastIndexOf("url");
-        int urlEnd = pageNasa.lastIndexOf("}");
-        String urlPhoto = pageNasa.substring(urlBegin + 6, urlEnd - 1);
-        try (InputStream from = new URL(urlPhoto).openStream()) {
-            Path to = Paths.get("photo.jpg");  //  ЕСЛИ БЕЗ ПЕРЕЗАПИСИ, ТО ЭТА СТРОЧКА НЕ НУЖНА !
-//            Files.copy(from, Paths.get("photo.jpg"));  //  ЭТО БЫЛО РАНЕЕ, БЕЗ ПЕРЕЗАПИСИ !
-            Files.copy(from, to, StandardCopyOption.REPLACE_EXISTING);
-        }
+//        String dateBegin_NO_Format = "2022/12/31";
 
-        System.out.println("\n" + "Картинка сохранена!");
-
-        int explanationBegin = pageNasa.lastIndexOf("explanation");
-        int explanationEnd = pageNasa.lastIndexOf("hdurl");
-        String explanation = pageNasa.substring(explanationBegin + 14, explanationEnd - 3/* или 8, три - правильно */);
-        System.out.println("Пояснение к фртографии: \n" + explanation);
+//        String pageNasa = downloadWeBPage("https://api.nasa.gov/planetary/apod?api_key=DEMO_KEY&date=2019-10-14"); //  ВОТ ЗДЕСЬ ЗАДАЕТСЯ ДАТА
+//        int urlBegin = pageNasa.lastIndexOf("url");
+//        int urlEnd = pageNasa.lastIndexOf("}");
+//        String urlPhoto = pageNasa.substring(urlBegin + 6, urlEnd - 1);
+//        try (InputStream from = new URL(urlPhoto).openStream()) {
+//            Path to = Paths.get("photo.jpg");  //  ЕСЛИ БЕЗ ПЕРЕЗАПИСИ, ТО ЭТА СТРОЧКА НЕ НУЖНА !
+////            Files.copy(from, Paths.get("photo.jpg"));  //  ЭТО БЫЛО РАНЕЕ, БЕЗ ПЕРЕЗАПИСИ !
+//            Files.copy(from, to, StandardCopyOption.REPLACE_EXISTING);
+//        }
+//
+//        System.out.println("\n" + "Картинка сохранена!");
+//
+//        int explanationBegin = pageNasa.lastIndexOf("explanation");
+//        int explanationEnd = pageNasa.lastIndexOf("hdurl");
+//        String explanation = pageNasa.substring(explanationBegin + 14, explanationEnd - 3/* или 8, три - правильно */);
+//        System.out.println("Пояснение к фртографии: \n" + explanation);
 
     }
+
 
     private static String downloadWeBPage(String url) throws IOException {
         StringBuilder result = new StringBuilder();
@@ -84,6 +72,30 @@ public class Draft_Task1_3_6_7_Photo_NASA_РАБОТАЕТ_С_ДАТОЙ {
             }
         }
         return result.toString();
+    }
+
+    private static void dateFormat_Begin(String dateBegin_NO_Format) {
+        SimpleDateFormat dt = new SimpleDateFormat("yyyy/MM/dd");
+        try {
+            Date date = dt.parse(dateBegin_NO_Format);
+            SimpleDateFormat dt1 = new SimpleDateFormat("yyyy-MM-dd");
+            String dateBegin_YES_Format = dt1.format(date);
+            System.out.println("Стало dateBegin_YES_Format: " + dateBegin_YES_Format);
+        } catch (ParseException e) {
+            e.printStackTrace();
+        }
+//        System.out.println(); //  перенос строки
+    }
+    private static void dateFormat_Next(String dateNext_NO_Format) {
+        SimpleDateFormat dt = new SimpleDateFormat("yyyy/MM/dd");
+        try {
+            Date date2 = dt.parse(dateNext_NO_Format);
+            SimpleDateFormat dt1 = new SimpleDateFormat("yyyy-MM-dd");
+            String dateNext_YES_Format = dt1.format(date2);
+            System.out.println("Стала следующ. дата в цикле В ФОРМАТЕ: " + dateNext_YES_Format);
+        } catch (ParseException e) {
+            e.printStackTrace();
+        }
     }
 }
 //        Конец Примера _ КККККККККККККККК
