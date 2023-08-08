@@ -18,6 +18,7 @@ public class Draft_Task1_3_6_7_Photo_NASA_РАБОТАЕТ_С_ДАТОЙ {
         System.out.println("Задание: \n7. Сохраняйте снимки NASA с 1 января до того момента, пока в поле Explanation " +
                 "нет слова “Earth”\n\nРешение: ");
 
+//        String dateBegin = "2022/12/31";
         for (int i = 0; i < 2; i++) {
             System.out.println("ИТЕРАЦИЯ " + (i+1));
 
