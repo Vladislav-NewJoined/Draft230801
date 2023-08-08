@@ -40,8 +40,6 @@ public class Draft_Task1_3_6_7_Photo_NASA_РАБОТАЕТ_С_ДАТОЙ {
 
 
 
-//        String dateBegin_NO_Format = "2022/12/31";
-
 //        String pageNasa = downloadWeBPage("https://api.nasa.gov/planetary/apod?api_key=DEMO_KEY&date=2019-10-14"); //  ВОТ ЗДЕСЬ ЗАДАЕТСЯ ДАТА
 //        int urlBegin = pageNasa.lastIndexOf("url");
 //        int urlEnd = pageNasa.lastIndexOf("}");
