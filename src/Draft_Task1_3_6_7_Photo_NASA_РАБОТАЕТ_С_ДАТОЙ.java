@@ -10,26 +10,40 @@ import java.util.Calendar;
 import java.util.Date;
 import java.util.Scanner;
 
-//        Пример _ ППППППППППППППППППППППППППППППППППП ТЕСТ МЕТОДОВ И КЛАССОВ Каким макаром взять переменную term,
+//        Пример _ ППППППППППППППППППППППППППППППППППП ТЕСТ МЕТОДОВ И КЛАССОВ ГЛАВНОЕ!!!!!!!! ИЗ МЕТОДА НЕ main
+//        В МЕТОД НЕ main.
+//        Каким макаром взять переменную term,
 //        которая появилась вообще в третьем методе. Доступность переменных из разных методов.
 //        Module1_Tema3_Urok3 Области видимости переменной 0 50 21 - Важный момент, я понимаю, что Вы могли устать
 //        а про про то как из метода в метод передавать переменнкю - видео мин 0 53 21
 public class Draft_Task1_3_6_7_Photo_NASA_РАБОТАЕТ_С_ДАТОЙ {
     public static void main(String[] args) throws IOException, ParseException {
-        String termWithoutSpaces = term.replaceAll(" ", "+");   //  1. Пошагово пишем
 
-        getUserInput();                                         //  5. Нажали Ctrl + Alt + M
-
+//        getUserInput();                                         //  5. Нажали Ctrl + Alt + M
+//        String х = getUserInput();                              //  10. Назвали случайным x
+        String term = getUserInput();                           //  11. Переименовали с x на term
 
     }
 
-    private static void getUserInput() {                        //  5. Нажали Ctrl + Alt + M
+    static void buildUrl() {                                    //  13. Создали другой метод
+        String termWithoutSpaces = term.replaceAll(" ", "+");   //  1. Пошагово пишем  //  Перемещаем из методв main в метод buildUrl
+        System.out.println(termWithoutSpaces);                  //  12.    //  Перемещаем из методв main в метод buildUrl
+        String itunesApi = "http://itunes.apple.com/search?term="; // 14  //  Перемещаем из методв main в метод buildUrl
+        String Limutparam = "&limit=1";  //  Перемещаем из методв main в метод buildUrl
+
+    }
+
+//    private static void getUserInput() {                        //  5. Нажали Ctrl + Alt + M
+    /*private */static String getUserInput() {                          //  7.
         System.out.println("What are you looking in iTunes?");  //  2.
         Scanner scanner = new Scanner (System.in);              //  3.
-        String term = scanner.nextLine(); //  war of worlds     //  4.
+//        String term = scanner.nextLine(); //  war of worlds     //  6.
+        String info = scanner.nextLine(); //  war of worlds     //  8.  Переименовали. Сделали info, а не term
+        return info;                                            //  9.  Этим вытаскиваем из метода
     }
 }
 //        Конец Примера _ КККККККККККККККК
+//  закончил на мин 0 53 15  Module1_Tema3_Urok3 Области видимости переменной _Строка 29
 
 
 
@@ -38,7 +52,41 @@ public class Draft_Task1_3_6_7_Photo_NASA_РАБОТАЕТ_С_ДАТОЙ {
 
 
 
-////        Пример _ ППППППППППППППППППППППППППППППППППП ТЕСТ МЕТОДОВ И КЛАССОВ с изменениями Виктора Сильнова
+////        Пример 9 ППППППППППППППППППППППППППППППППППП ТЕСТ МЕТОДОВ И КЛАССОВ Из метода не main в метод main.
+////        Каким макаром взять переменную term,
+////        которая появилась вообще в третьем методе. Доступность переменных из разных методов.
+////        Module1_Tema3_Urok3 Области видимости переменной 0 50 21 - Важный момент, я понимаю, что Вы могли устать
+////        а про про то как из метода в метод передавать переменнкю - видео мин 0 53 21
+//public class Draft_Task1_3_6_7_Photo_NASA_РАБОТАЕТ_С_ДАТОЙ {
+//    public static void main(String[] args) throws IOException, ParseException {
+//
+////        getUserInput();                                         //  5. Нажали Ctrl + Alt + M
+////        String х = getUserInput();                              //  10. Назвали случайным x
+//        String term = getUserInput();                           //  11. Переименовали с x на term
+//
+//        String termWithoutSpaces = term.replaceAll(" ", "+");   //  1. Пошагово пишем
+//        System.out.println(termWithoutSpaces);
+//    }
+//
+////    private static void getUserInput() {                        //  5. Нажали Ctrl + Alt + M
+//    private static String getUserInput() {                          //  7.
+//        System.out.println("What are you looking in iTunes?");  //  2.
+//        Scanner scanner = new Scanner (System.in);              //  3.
+////        String term = scanner.nextLine(); //  war of worlds     //  4.  Переименовали. Сделали info, а не term
+//        String info = scanner.nextLine(); //  war of worlds     //  8.
+//        return info;                                            //  9.  Этим вытаскиваем из метода
+//    }
+//}
+////        Конец Примера 9 КККККККККККККККК
+
+
+
+
+
+
+
+
+////        Пример 8 ППППППППППППППППППППППППППППППППППП ТЕСТ МЕТОДОВ И КЛАССОВ с изменениями Виктора Сильнова
 ////  Тест как sout в отдельный класс вывести
 ////  Здесь видео мин 02 28 , предположительно , ВАЖНО! Как sout в качестве объекта класса в main класс вывести
 ////  Гоша Дударь https://www.youtuBe.com/watch?v=_GLnOwDEE_A&list=PL0lO_mIqDDFW2xXiWSfjT7hEdOUZHVNBK&index=14
@@ -88,7 +136,7 @@ public class Draft_Task1_3_6_7_Photo_NASA_РАБОТАЕТ_С_ДАТОЙ {
 //        System.out.println("Hello, " + name);
 //    }
 //}
-////        Конец Примера _ КККККККККККККККК
+////        Конец Примера 8 КККККККККККККККК
 
 
 
