@@ -8,57 +8,25 @@ import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.Calendar;
 import java.util.Date;
+import java.util.Scanner;
 
 //        Пример _ ППППППППППППППППППППППППППППППППППП ТЕСТ МЕТОДОВ И КЛАССОВ Каким макаром взять переменную term,
 //        которая появилась вообще в третьем методе. Доступность переменных из разных методов.
 //        Module1_Tema3_Urok3 Области видимости переменной 0 50 21 - Важный момент, я понимаю, что Вы могли устать
-//  Тест как sout в отдельный класс вывести
-//  Здесь видео мин 02 28 , предположительно , ВАЖНО! Как sout в качестве объекта класса в main класс вывести
-//  Гоша Дударь https://www.youtuBe.com/watch?v=_GLnOwDEE_A&list=PL0lO_mIqDDFW2xXiWSfjT7hEdOUZHVNBK&index=14
+//        а про про то как из метода в метод передавать переменнкю - видео мин 0 53 21
 public class Draft_Task1_3_6_7_Photo_NASA_РАБОТАЕТ_С_ДАТОЙ {
     public static void main(String[] args) throws IOException, ParseException {
+        String termWithoutSpaces = term.replaceAll(" ", "+");   //  1. Пошагово пишем
 
-        //  Далее про метод и имя ГОША ДУДАРЬ
-        //  package вот ТАК УКАЗЫВАТЬ: package com.company
-        System.out.println("От ГОШИ ДУДАРЯ: ");
-        Person vitia = new Person();
-        vitia.height = 120;  //  Если изменим ( не 180, а 120 ), то выведется 120
-        System.out.println(vitia.height);
-        Person vlad = new Person();
-        System.out.println(vlad.height);
+        getUserInput();                                         //  5. Нажали Ctrl + Alt + M
 
-//  Про метод и имя здесь: видео мин 08 00 Гоша Дударь https://www.youtuBe.com/watch?v=_GLnOwDEE_A&list=PL0lO_mIqDDFW2xXiWSfjT7hEdOUZHVNBK&index=14
-//  Метод от класса отличается те, что в круглых скобках перраметр (его значение) указывать нужно.
-        vitia.say("George");
-        System.out.println(); //  перенос строки
-        //  Конец ГОША ДУДАРЬ
 
-        //  Далее про методы и доступность переменных внутри методов ВИКТОР СИЛЬНОВ
-        //  MoModule1_Tema3_Urok5 видео мин 36 31
-//        StringBuilder result = new StringBuilder(); //  мы его создали внутри метода, а не как аргумент
-        System.out.println("От ВИКТОРА СИЛЬНОВА: ");
-        String page = "тестирование";
-//        StringBuilder result = null;
-        extracted (page/*, result*/);
     }
 
-    // Это метод, а не класс от ВИКТОРА СИЛЬНОВА
-    static StringBuilder extracted (String page/*, StringBuilder result*/) { // Это только метод, а не класс от ВИКТОРА СИЛЬНОВА
-        System.out.println(page.toUpperCase());
-
-        StringBuilder result = new StringBuilder();
-        result.append("This is a book.");
-        result.append(" Author is Hemingway.");
-        System.out.println(result);
-
-        return result;
-    }
-
-}
-class Person {  //  Если в отдельном файле, то надо писать public class
-    public int height = 180;
-    public void say (String name) {
-        System.out.println("Hello, " + name);
+    private static void getUserInput() {
+        System.out.println("What are you looking in iTunes?");  //  2.
+        Scanner scanner = new Scanner (System.in);              //  3.
+        String term = scanner.nextLine(); //  war of worlds     //  4.
     }
 }
 //        Конец Примера _ КККККККККККККККК
