@@ -18,13 +18,16 @@ public class Draft_Task1_3_6_7_Photo_NASA_РАБОТАЕТ_С_ДАТОЙ {
         System.out.println("Задание: \n7. Сохраняйте снимки NASA с 1 января до того момента, пока в поле Explanation " +
                 "нет слова “Earth”\n\nРешение: ");
 
-//        String dateBegin = "2022/12/31";
-        for (int i = 0; i < 2; i++) {
+        String dateBegin_NO_Format = "2022/12/31";
+//        String dateNext_YES_Format;
+        for (int i = 0; i < 3; i++) {
             System.out.println("ИТЕРАЦИЯ " + (i+1));
 
-            String dateBegin_NO_Format = "2022/12/31";
+//            String dateBegin_NO_Format = dateBegin;
+//            String dateBegin_YES_Format = "2022-12-31";
             System.out.println("Было dateBegin_NO_Format: " + dateBegin_NO_Format);
             dateFormat_Begin(dateBegin_NO_Format);  //  Форматируем дату
+//            System.out.println("Стало dateBegin_YES_Format: " + dateBegin_YES_Format);
 
             final SimpleDateFormat format = new SimpleDateFormat("yyyy/MM/dd");
             final Date date = format.parse(dateBegin_NO_Format);
@@ -35,10 +38,26 @@ public class Draft_Task1_3_6_7_Photo_NASA_РАБОТАЕТ_С_ДАТОЙ {
             System.out.println("Была следующ. дата в цикле НЕ В ФОРМАТЕ: " + dateNext_NO_Format);
             dateFormat_Next(dateNext_NO_Format);  //  Форматируем дату
 
+            String dateForSubstitute = dateNext_YES_Format; //  Дата для подстановки
+            String pageNasaAsText = "https://api.nasa.gov/planetary/apod?api_key=DEMO_KEY&date=2019-10-14";
+            int urlBeginAsText = pageNasaAsText.lastIndexOf("date=");
+            String substringUrlAsText = pageNasaAsText.substring(urlBeginAsText + 5);
+            System.out.println(substringUrlAsText);
+            String pageNasaAsText_NEW = pageNasaAsText.replace(substringUrlAsText, dateForSubstitute);
+            System.out.println("С подставленной датой: \n" + pageNasaAsText_NEW);
+
+            dateBegin_NO_Format = dateNext_NO_Format;
+
             System.out.println(); //  перенос строки
         }
 
-
+//        String dateForSubstitute = "2022-12-31"; //  Дата для подстановки
+//        String pageNasaAsText = "https://api.nasa.gov/planetary/apod?api_key=DEMO_KEY&date=2019-10-14";
+//        int urlBeginAsText = pageNasaAsText.lastIndexOf("date=");
+//        String substringUrlAsText = pageNasaAsText.substring(urlBeginAsText + 5);
+//        System.out.println(substringUrlAsText);
+//        String pageNasaAsText_NEW = pageNasaAsText.replace(substringUrlAsText, dateForSubstitute);
+//        System.out.println("С подставленной датой: \n" + pageNasaAsText_NEW);
 
 //        String pageNasa = downloadWeBPage("https://api.nasa.gov/planetary/apod?api_key=DEMO_KEY&date=2019-10-14"); //  ВОТ ЗДЕСЬ ЗАДАЕТСЯ ДАТА
 //        int urlBegin = pageNasa.lastIndexOf("url");
