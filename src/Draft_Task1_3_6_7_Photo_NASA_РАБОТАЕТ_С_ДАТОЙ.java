@@ -23,7 +23,7 @@ public class Draft_Task1_3_6_7_Photo_NASA_РАБОТАЕТ_С_ДАТОЙ {
 
     }
 
-    private static void getUserInput() {
+    private static void getUserInput() {                        //  5. Нажали Ctrl + Alt + M
         System.out.println("What are you looking in iTunes?");  //  2.
         Scanner scanner = new Scanner (System.in);              //  3.
         String term = scanner.nextLine(); //  war of worlds     //  4.
