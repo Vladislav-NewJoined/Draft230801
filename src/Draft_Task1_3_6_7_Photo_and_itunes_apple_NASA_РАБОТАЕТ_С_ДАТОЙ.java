@@ -181,14 +181,6 @@ public class Draft_Task1_3_6_7_Photo_and_itunes_apple_NASA_РАБОТАЕТ_С_�
 //
 //        System.out.println();  //  перенос строки
 //        }
-//
-//
-//
-//
-//
-//
-//
-//
 //    }
 //
 //
