@@ -2,7 +2,7 @@
 <project version="4">
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
-      <module name="Draft230803" options="--add-exports java.base/sun.net.www.http=ALL-UNNAMED" />
+      <module name="Draft230801" options="--add-exports java.base/sun.net.www.http=ALL-UNNAMED" />
     </option>
   </component>
 </project>
