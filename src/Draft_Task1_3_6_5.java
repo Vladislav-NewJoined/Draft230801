@@ -25,9 +25,7 @@ public class Draft_Task1_3_6_5 {
             count = sumDigits(n);
         }
         System.out.println("Это первое найденное число с заданными условиями. Программа закончена.");
-
     }
-
     public static int sumDigits (int n) {
         int sum = 0;
         while (n != 0) {
@@ -36,7 +34,6 @@ public class Draft_Task1_3_6_5 {
         }
         return sum;
     }
-
 }
 //        Конец Примера _ КККККККККККККККК
 
