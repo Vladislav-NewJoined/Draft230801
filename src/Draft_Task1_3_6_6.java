@@ -34,76 +34,77 @@ public class Draft_Task1_3_6_6 {
 //            /*String dateNext_YES_Format */= dateBegin_NO_Format = dateNext_NO_Format; //  ОБРАТИТЬ ВНИМАНИЕ: КАК МОЖНО ЗАПИСЫВАТЬ
                 String dateNext_YES_Format = dateBegin_NO_Format = dateNext_NO_Format;
                 System.out.print(dateNext_YES_Format + " ");
-                i = i+1;
+                i++;
                 if (i == 365) {
                     break;
                 }
             }
-            if (i == 365) {
-                break;
-            }
-            i = i-1;
             System.out.println();
+            i = i - 1;
         }
-        System.out.println();  //  перенос строки
-}
-    private static String dateFormat_Next(String dateNext_NO_Format) {
-        SimpleDateFormat dt = new SimpleDateFormat("yyyy/MM/dd");
-        String dateNext_YES_Format = null;
-        try {
-            Date date2 = dt.parse(dateNext_NO_Format);
-            SimpleDateFormat dt1 = new SimpleDateFormat("yyyy-MM-dd");
-            dateNext_YES_Format = dt1.format(date2);
-            System.out.print(/*"Стала следующ. дата в цикле В ФОРМАТЕ: " + */dateNext_YES_Format + ", ");
-        } catch (ParseException e) {
-            e.printStackTrace();
-        }
-        return dateNext_YES_Format;
+
+
+//        for (int i = 0; i < 365; i++) {
+//            for (int a = 0; a < 10; a++) {
+////                System.out.print((i+1) + " ");
+//                final SimpleDateFormat format = new SimpleDateFormat("yyyy/MM/dd");
+//                final Date date = format.parse(dateBegin_NO_Format);
+//                final Calendar calendar = Calendar.getInstance();
+//                calendar.setTime(date);
+//                calendar.add(Calendar.DAY_OF_YEAR, 1);
+//                String dateNext_NO_Format = format.format(calendar.getTime());
+////            /*String dateNext_YES_Format */= dateBegin_NO_Format = dateNext_NO_Format; //  ОБРАТИТЬ ВНИМАНИЕ: КАК МОЖНО ЗАПИСЫВАТЬ
+//                String dateNext_YES_Format = dateBegin_NO_Format = dateNext_NO_Format;
+//                System.out.print(dateNext_YES_Format + " ");
+//                i = i+1;
+//                if (i == 365) {
+//                    break;
+//                }
+//            }
+//            if (i == 365) {
+//                break;
+//            }
+//            i = i-1;
+//            System.out.println();
+//        }
     }
+
+//    private static String dateFormat_Next(String dateNext_NO_Format) {
+//        SimpleDateFormat dt = new SimpleDateFormat("yyyy/MM/dd");
+//        String dateNext_YES_Format = null;
+//        try {
+//            Date date2 = dt.parse(dateNext_NO_Format);
+//            SimpleDateFormat dt1 = new SimpleDateFormat("yyyy-MM-dd");
+//            dateNext_YES_Format = dt1.format(date2);
+//            System.out.print(/*"Стала следующ. дата в цикле В ФОРМАТЕ: " + */dateNext_YES_Format + ", ");
+//        } catch (ParseException e) {
+//            e.printStackTrace();
+//        }
+//        return dateNext_YES_Format;
+//    }
 }
 //        Конец Примера _ КККККККККККККККК
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 ////        Пример 13 ППППППППППППППППППППППППППППППППППП  ВЫВОД В НЕСКОЛЬКО СТРОК. ПЕРЕНОС СТРОКИ ЧЕРЕЗ N ЭЛЕМЕНТОВ
 //public class Draft_Task1_3_6_6 {
 //    public static void main(String[] args) throws IOException, ParseException {
-//        for (int i = 1001; i < 1046; i++) {
-//            for (int a = 0; a < 10; a++) {
-//                System.out.print(/*a*/i + " ");
-//                i++;
+//        for(int i=1001;i< 1046;i++){
+//        for(int a=0;a< 10;a++){
+//        System.out.print(/*a*/i+" ");
+//        i++;
 //
-//                if (i == 1046) {
-//                    break;
-//                }
+//        if(i==1046){
+//        break;
+//        }
 //
-//            }
-//            System.out.println();
-//            i = i - 1;
+//        }
+//        System.out.println();
+//        i=i-1;
 //        }
 //    }
 //}
 ////        Конец Примера 13 КККККККККККККККК
-
-
-
-
-
-
-
-
-
 
 
 ////        Пример 12 ППППППППППППППППППППППППППППППППППП Строки убрал, break добавить
