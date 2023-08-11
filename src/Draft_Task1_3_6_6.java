@@ -64,6 +64,48 @@ public class Draft_Task1_3_6_6 {
 //        Конец Примера _ КККККККККККККККК
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+////        Пример 13 ППППППППППППППППППППППППППППППППППП  ВЫВОД В НЕСКОЛЬКО СТРОК. ПЕРЕНОС СТРОКИ ЧЕРЕЗ N ЭЛЕМЕНТОВ
+//public class Draft_Task1_3_6_6 {
+//    public static void main(String[] args) throws IOException, ParseException {
+//        for (int i = 1001; i < 1046; i++) {
+//            for (int a = 0; a < 10; a++) {
+//                System.out.print(/*a*/i + " ");
+//                i++;
+//
+//                if (i == 1046) {
+//                    break;
+//                }
+//
+//            }
+//            System.out.println();
+//            i = i - 1;
+//        }
+//    }
+//}
+////        Конец Примера 13 КККККККККККККККК
+
+
+
+
+
+
+
+
+
+
+
 ////        Пример 12 ППППППППППППППППППППППППППППППППППП Строки убрал, break добавить
 ////  Пример взят отсюда: https://www.youtube.com/watch?v=5V2lZpEeRlA  девушка на английском говорит
 ////  5 способов выполнения HTTP-запросов  https://javascopes.com/5-ways-to-make-http-requests-in-java-2p3-fca27bc8/
