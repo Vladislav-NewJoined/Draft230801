@@ -1,4 +1,4 @@
-import TestPrinterFor1_3_7_0.Printer;
+import Package_testPrinterFor1_3_7_0.Printer;
 
 public class MyClass23 {
     public static void main(String[] args) {

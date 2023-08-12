@@ -1,6 +1,4 @@
-import TestPrinterFor1_3_7_0.Printer;
-
-import java.util.Scanner;
+import Package_testPrinterFor1_3_7_0.Printer;
 
 //        Пример _ ППППППППППППППППППППППППППППППППППП
 public class Draft_Task1_3_7_0_Whole_Video_Parametry_metodov {
