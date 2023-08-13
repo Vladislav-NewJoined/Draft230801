@@ -5,14 +5,14 @@ import java.util.List;
 
 //        Пример _ ППППППППППППППППППППППППППППППППППП  СДЕЛАН ОКОНЧАТЕЛЬНО, ОТПРАВЛЕН В ЭТОМ ВИДЕ !!!!!
 //  Преобразование строки в массив слов: https://overcoder.net/q/172469/%D0%BF%D1%80%D0%B5%D0%BE%D0%B1%D1%80%D0%B0%D0%B7%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D0%B5-%D1%81%D1%82%D1%80%D0%BE%D0%BA%D0%B8-%D0%BF%D1%80%D0%B5%D0%B4%D0%BB%D0%BE%D0%B6%D0%B5%D0%BD%D0%B8%D1%8F-%D0%B2-%D0%BC%D0%B0%D1%81%D1%81%D0%B8%D0%B2-%D1%81%D0%BB%D0%BE%D0%B2-%D0%B2-java
-public class Draft_Task1_3_7_2 {
+public class Draft_Task1_3_7_2_Sobrat_vmeste_mnogo_parametrov_i_peremennyh {
     public static void main(String[] args) throws IOException {
         System.out.println("""
-                Задание:\s
-                2. Реализуйте метод, который из двух массивов строк собирает третий, в
-                   котором чередуются элементы первых двух
+            Задание:\s
+            2. Реализуйте метод, который из двух массивов строк собирает третий, в
+               котором чередуются элементы первых двух
 
-                Решение:\s""");
+            Решение:\s""");
 
         System.out.println("Шаг 1.   Создаем два исходных строковых массива (состоящих из слов исходных строк):");
         getCombinedArray();
@@ -71,9 +71,64 @@ public class Draft_Task1_3_7_2 {
 
 
 
+////        Пример 6 ППППППППППППППППППППППППППППППППППП  ЭКСПЕРИМЕНТИРОВАНИЕ ПОСТФАКТУМ_СОБРАТЬ ВМЕСТЕ МНОГО ПАРАМЕТРОВ И ПЕРЕМЕННЫХ В ОДНОМ МЕТОДЕ
+////  Преобразование строки в массив слов: https://overcoder.net/q/172469/%D0%BF%D1%80%D0%B5%D0%BE%D0%B1%D1%80%D0%B0%D0%B7%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D0%B5-%D1%81%D1%82%D1%80%D0%BE%D0%BA%D0%B8-%D0%BF%D1%80%D0%B5%D0%B4%D0%BB%D0%BE%D0%B6%D0%B5%D0%BD%D0%B8%D1%8F-%D0%B2-%D0%BC%D0%B0%D1%81%D1%81%D0%B8%D0%B2-%D1%81%D0%BB%D0%BE%D0%B2-%D0%B2-java
+//public class Draft_Task1_3_7_2_Sobrat_vmeste_mnogo_parametrov_i_peremennyh {
+//    public static void main(String[] args) throws IOException {
+//        displayStr("Tom");
+//        displayInt(36);
+//        displayStr("Bob");
+//        displayInt(28);
+//        displayStr("Sam");
+//        displayInt(23);
+//
+//        System.out.println();
+//        displayStr2("Tom", 3);
+//        displayInt(36);
+//        displayStr2("Bob", 7);
+//        displayInt(28);
+//        displayStr2("Sam", 999);
+//        displayInt(23);
+//
+////        display("Tom", 34);
+////        display("Bob", 28);
+////        display("Sam", 23);
+//
+//
+//    }
+//    static String displayStr(String name){
+//
+//        System.out.print("Это " + name + ", его возраст: ");
+//        return name;
+//    }
+//
+//    static String displayStr2(String name, int age){
+//
+//        System.out.print("Это " + name + ", его возраст: " + age + "! \n");
+//        return name;
+//    }
+//
+//    static Integer displayInt(int age){
+//
+//        System.out.println(age);
+//        return age;
+//    }
+////    static void display(String name, int age){
+////        System.out.println(name);
+////        System.out.println(age);
+////    }
+//}
+////        Конец Примера 6 КККККККККККККККК
+
+
+
+
+
+
+
 ////        Пример 5 ППППППППППППППППППППППППППППППППППП  Работает уже правильно, с объединенными методами, убрать лишние строки
 ////  Преобразование строки в массив слов: https://overcoder.net/q/172469/%D0%BF%D1%80%D0%B5%D0%BE%D0%B1%D1%80%D0%B0%D0%B7%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D0%B5-%D1%81%D1%82%D1%80%D0%BE%D0%BA%D0%B8-%D0%BF%D1%80%D0%B5%D0%B4%D0%BB%D0%BE%D0%B6%D0%B5%D0%BD%D0%B8%D1%8F-%D0%B2-%D0%BC%D0%B0%D1%81%D1%81%D0%B8%D0%B2-%D1%81%D0%BB%D0%BE%D0%B2-%D0%B2-java
-//public class Draft_Task1_3_7_2 {
+//public class Draft_Task1_3_7_2_Sobrat_vmeste_mnogo_parametrov_i_peremennyh {
 //    public static void main(String[] args) throws IOException {
 //        System.out.println("""
 //                Задание:\s
@@ -230,7 +285,7 @@ public class Draft_Task1_3_7_2 {
 
 ////        Пример 4 ППППППППППППППППППППППППППППППППППП  из интернет
 ////  отсюда https://metanit.com/java/tutorial/2.16.php?ysclid=ll8j2nh1vz285380969
-//public class Draft_Task1_3_7_2 {
+//public class Draft_Task1_3_7_2_Sobrat_vmeste_mnogo_parametrov_i_peremennyh {
 //    public static void main(String[] args) throws IOException {
 //
 //        display("Tom", 34);
@@ -254,11 +309,11 @@ public class Draft_Task1_3_7_2 {
 ////        Пример 4 ППППППППППППППППППППППППППППППППППП  из интернет
 ////  отсюда https://www.daniweb.com/programming/software-development/threads/133321/how-methods-with-multiple-parameters-are-declared#post643232
 ////  Преобразование строки в массив слов: https://overcoder.net/q/172469/%D0%BF%D1%80%D0%B5%D0%BE%D0%B1%D1%80%D0%B0%D0%B7%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D0%B5-%D1%81%D1%82%D1%80%D0%BE%D0%BA%D0%B8-%D0%BF%D1%80%D0%B5%D0%B4%D0%BB%D0%BE%D0%B6%D0%B5%D0%BD%D0%B8%D1%8F-%D0%B2-%D0%BC%D0%B0%D1%81%D1%81%D0%B8%D0%B2-%D1%81%D0%BB%D0%BE%D0%B2-%D0%B2-java
-//public class Draft_Task1_3_7_2 {
+//public class Draft_Task1_3_7_2_Sobrat_vmeste_mnogo_parametrov_i_peremennyh {
 //    public static void main(String[] args) throws IOException {
 //        String values1[] = {"Mom", "Dad", "Sis"};
 //
-//        Draft_Task1_3_7_2 VarArgTest = null;
+//        Draft_Task1_3_7_2_Sobrat_vmeste_mnogo_parametrov_i_peremennyh VarArgTest = null;
 //        VarArgTest.myVarArgMethod(values1);
 //        VarArgTest.myVarArgMethod(" ", " ");
 //        VarArgTest.myVarArgMethod("Yo", "This", "Rocks", "My", "Socks");
@@ -281,7 +336,7 @@ public class Draft_Task1_3_7_2 {
 
 ////        Пример 3 ППППППППППППППППППППППППППППППППППП  Работает, теперь надо два метода объединить
 ////  Преобразование строки в массив слов: https://overcoder.net/q/172469/%D0%BF%D1%80%D0%B5%D0%BE%D0%B1%D1%80%D0%B0%D0%B7%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D0%B5-%D1%81%D1%82%D1%80%D0%BE%D0%BA%D0%B8-%D0%BF%D1%80%D0%B5%D0%B4%D0%BB%D0%BE%D0%B6%D0%B5%D0%BD%D0%B8%D1%8F-%D0%B2-%D0%BC%D0%B0%D1%81%D1%81%D0%B8%D0%B2-%D1%81%D0%BB%D0%BE%D0%B2-%D0%B2-java
-//public class Draft_Task1_3_7_2 {
+//public class Draft_Task1_3_7_2_Sobrat_vmeste_mnogo_parametrov_i_peremennyh {
 //    public static void main(String[] args) throws IOException {
 //        System.out.println("""
 //                Задание:\s
@@ -363,7 +418,7 @@ public class Draft_Task1_3_7_2 {
 
 ////        Пример 2 ППППППППППППППППППППППППППППППППППП Работает, теперь в метод это выделить
 ////  Преобразование строки в массив слов: https://overcoder.net/q/172469/%D0%BF%D1%80%D0%B5%D0%BE%D0%B1%D1%80%D0%B0%D0%B7%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D0%B5-%D1%81%D1%82%D1%80%D0%BE%D0%BA%D0%B8-%D0%BF%D1%80%D0%B5%D0%B4%D0%BB%D0%BE%D0%B6%D0%B5%D0%BD%D0%B8%D1%8F-%D0%B2-%D0%BC%D0%B0%D1%81%D1%81%D0%B8%D0%B2-%D1%81%D0%BB%D0%BE%D0%B2-%D0%B2-java
-//public class Draft_Task1_3_7_2 {
+//public class Draft_Task1_3_7_2_Sobrat_vmeste_mnogo_parametrov_i_peremennyh {
 //    public static void main(String[] args) throws IOException {
 //        System.out.println("""
 //                Задание:\s
@@ -432,7 +487,7 @@ public class Draft_Task1_3_7_2 {
 ////        Пример 1 ППППППППППППППППППППППППППППППППППП
 // //  Решение простое  _ЗАПОЛНИТЬ ЭЛЕМЕНТАМИ ДРУГОГО МАССИВА , СТАТИЧЕСКОГО
 ////  Преобразование строки в массив слов: https://overcoder.net/q/172469/%D0%BF%D1%80%D0%B5%D0%BE%D0%B1%D1%80%D0%B0%D0%B7%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D0%B5-%D1%81%D1%82%D1%80%D0%BE%D0%BA%D0%B8-%D0%BF%D1%80%D0%B5%D0%B4%D0%BB%D0%BE%D0%B6%D0%B5%D0%BD%D0%B8%D1%8F-%D0%B2-%D0%BC%D0%B0%D1%81%D1%81%D0%B8%D0%B2-%D1%81%D0%BB%D0%BE%D0%B2-%D0%B2-java
-//public class Draft_Task1_3_7_2 {
+//public class Draft_Task1_3_7_2_Sobrat_vmeste_mnogo_parametrov_i_peremennyh {
 //    public static void main(String[] args) throws IOException {
 //        final int[] numbers = new int[] {2,4,6,8,10,12,14,16,18,20};
 //        final List<Integer> list = new ArrayList<Integer>();
