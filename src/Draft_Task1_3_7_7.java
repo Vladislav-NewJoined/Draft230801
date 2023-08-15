@@ -14,7 +14,7 @@ import java.time.LocalDate;
 import java.util.Calendar;
 import java.util.Date;
 
-//        Пример _ ППППППППППППППППППППППППППППППППППП  //
+//        Пример _ ППППППППППППППППППППППППППППППППППП  //  СДЕЛАН ОКОНЧАТЕЛЬНО, ОТПРАВЛЕН В ЭТОМ ВИДЕ !!!!!
 public class Draft_Task1_3_7_7 {
     public static void main(String[] args) throws IOException, ParseException {
         System.out.println("""
