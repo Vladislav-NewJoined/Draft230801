@@ -1,6 +1,6 @@
-import Package_testPrinterFor1_3_7_0.Printer;
+import com.myPackage230814.Printer;
 
-public class MyClass23 {
+public class Draft_Task1_3_7_0_Whole_Video_2__Parametry_metodov_MyClass23 {
     public static void main(String[] args) {
         Printer printer = new Printer();
         printer.maker = "HP";

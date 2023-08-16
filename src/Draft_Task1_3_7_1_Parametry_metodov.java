@@ -1,11 +1,8 @@
 import java.io.IOException;
-import java.text.BreakIterator;
-import java.util.ArrayList;
-import java.util.List;
 
 //        Пример _ ППППППППППППППППППППППППППППППППППП  СДЕЛАН ОКОНЧАТЕЛЬНО, ОТПРАВЛЕН В ЭТОМ ВИДЕ !!!!!
 //  Преобразование строки в массив слов: https://overcoder.net/q/172469/%D0%BF%D1%80%D0%B5%D0%BE%D0%B1%D1%80%D0%B0%D0%B7%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D0%B5-%D1%81%D1%82%D1%80%D0%BE%D0%BA%D0%B8-%D0%BF%D1%80%D0%B5%D0%B4%D0%BB%D0%BE%D0%B6%D0%B5%D0%BD%D0%B8%D1%8F-%D0%B2-%D0%BC%D0%B0%D1%81%D1%81%D0%B8%D0%B2-%D1%81%D0%BB%D0%BE%D0%B2-%D0%B2-java
-public class Draft_Task1_3_7_1 {
+public class Draft_Task1_3_7_1_Parametry_metodov {
     public static void main(String[] args) throws IOException {
         System.out.println("""
                 Задание:\s

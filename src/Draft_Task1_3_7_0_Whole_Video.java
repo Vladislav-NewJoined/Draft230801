@@ -1,7 +1,7 @@
-import Package_testPrinterFor1_3_7_0.Printer;
+import com.myPackage230814.Printer;
 
 //        Пример _ ППППППППППППППППППППППППППППППППППП
-public class Draft_Task1_3_7_0_Whole_Video_Parametry_metodov {
+public class Draft_Task1_3_7_0_Whole_Video {
     public static void main(String[] args) {
   //  Module1_Tema3_Урок 7. Параметры методов
   //  видео мин 04 01 - есть x, и нет никакого лимита
