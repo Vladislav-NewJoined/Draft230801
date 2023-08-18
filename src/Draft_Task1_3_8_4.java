@@ -1,6 +1,9 @@
+import java.util.Arrays;
+
 //        Пример _ ППППППППППППППППППППППППППППППППППП  //
 public class Draft_Task1_3_8_4 {
     public static void main(String[] args) {
+//  Пример взят отсюда: видео мин 06 15 https://youtu.be/tAtBPxw2RRQ   https://yandex.ru/video/preview/2055233165764642050
         System.out.println("""
                 Задание:\s
                 4. Реализуйте методы merge(int[] array1, int[] array2), merge(int[] array1, int[]
@@ -47,6 +50,7 @@ public class Draft_Task1_3_8_4 {
         array3[9] = 7;
 
         int[] array4 = new int[20];
+
 
     }
 }
