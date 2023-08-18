@@ -6,35 +6,35 @@ public class Draft_Task1_3_8_0_Whole_Video {
         //  закончил видео мин 09 21
 
 //        Printer printer = new Printer();
-        MaxValue printer = new MaxValue();
+        MaxValue_previous printer = new MaxValue_previous();
 //        setPrinterPrice(printer, 300);
         setPrinterPrice(printer, 349.99);
         System.out.println(printer.price);
         }
-//        static void setPrinterPrice(MaxValue balalaika, int price) {
-        static void setPrinterPrice(MaxValue balalaika, double price) {
+//        static void setPrinterPrice(MaxValue_previous balalaika, int price) {
+        static void setPrinterPrice(MaxValue_previous balalaika, double price) {
             price = price + 50;
             balalaika.price = price;
         }
 }
 
 
-//        MaxValue printer = new MaxValue();
+//        MaxValue_previous printer = new MaxValue_previous();
 //        System.out.println(printer.price);
 //        setPrinterPrice(printer, "349.O");
 //        setPrinterPrice(printer, 299);
 //        setPrinterPrice(printer, 299.99);
 //    }
-//    static void setPrinterPrice(MaxValue balalaika, double price) {
+//    static void setPrinterPrice(MaxValue_previous balalaika, double price) {
 //    price += 50;
 //    balalaika.price = price;
 //}
-//    static MaxValue setPrinterPrice(MaxValue printer, int price) {
+//    static MaxValue_previous setPrinterPrice(MaxValue_previous printer, int price) {
 //        price += 50;
 //        printer.price = price:
 //        return printer;
 //}
-//    static int setPrinterPrice (MaxValue printer, String price) {
+//    static int setPrinterPrice (MaxValue_previous printer, String price) {
 //        double priceDouble = Double.parseDouble(price);
 //        priceDouble += 50;
 //        printer.price = 50;
@@ -45,6 +45,6 @@ public class Draft_Task1_3_8_0_Whole_Video {
 //
 //
 //
-//class MaxValue {
+//class MaxValue_previous {
 //
 //}
