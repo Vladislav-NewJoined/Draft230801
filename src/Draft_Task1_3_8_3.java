@@ -1,4 +1,4 @@
-//        Пример _ ППППППППППППППППППППППППППППППППППП  //  надо второй метод делать
+//        Пример _ ППППППППППППППППППППППППППППППППППП  //
 //        Method 2: Without using pre-defined function
 //        https://www.geeksforgeeks.org/java-program-to-merge-two-arrays/
 public class Draft_Task1_3_8_3 {
