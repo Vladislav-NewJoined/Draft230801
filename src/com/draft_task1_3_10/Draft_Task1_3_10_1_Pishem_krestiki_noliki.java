@@ -1,4 +1,4 @@
-//закончил видео мин: 02 19
+//закончил видео мин: 20 05
 
 package com.draft_task1_3_10;
 import java.util.Scanner;
@@ -10,10 +10,13 @@ public class Draft_Task1_3_10_1_Pishem_krestiki_noliki {
 
                 Решение:\s""");
 
-        FieldX0 fieldX0 = new FieldX0();
-        fieldX0.initField();
-        fieldX0.printField();
+//        FieldX0 fieldX0 = new FieldX0();
+//        fieldX0.initField();
+//        fieldX0.printField();
 
+//        FieldX0 game = new FieldX0();
+        X0Game game = new X0Game();
+        game.setupNewGame();
 
 
         }
@@ -47,4 +50,27 @@ public class Draft_Task1_3_10_1_Pishem_krestiki_noliki {
             System.out.println();
         }
     }
+
+    boolean isPlaceFree(int rowIndex, int colIndex) {
+        if (rowIndex < 0 || rowIndex >= size || colIndex < 0 || colIndex >= size) {
+            return false;
+        } else {
+//            return this.field[rowIndex][colIndex] == ' ';
+        if (this.field[rowIndex][colIndex] == ' ') {
+            return true;
+        } else {
+            return false;
+
+        }
+        }
+    }
+
+    void setValue(int rowIndex, int colIndex, char value) {
+        this.field[rowIndex][colIndex] = value;
+    }
+
+    boolean isGameOver(char whoMakeNextTurn) {
+        return false;
+    }
+
 }
