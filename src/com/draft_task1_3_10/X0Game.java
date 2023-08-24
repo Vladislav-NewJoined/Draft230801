@@ -21,7 +21,22 @@ public class X0Game {
         char first = this.scanner.next().charAt(0);
         if (first == 'X' || first == '0') {
             this.whoMakeNextTurn = first;
+        } else {
+            System.out.println("I recognizing only X or 0 (zero). So first will be X");
+            this.whoMakeNextTurn = 'X';
         }
+    }
+
+    void turn() {
+        System.out.println(this.whoMakeNextTurn + ", your turn. ");
+        System.out.println("Chose row: ");
+        int rowNumber = this.scanner.nextInt();
+        System.out.println("Chose column: ");
+        int colNumber = this.scanner.nextInt();
+        int rowIndex = rowNumber - 1;
+        int colIndex = colNumber - 1;
+    }
+
 
     }
-}
+
