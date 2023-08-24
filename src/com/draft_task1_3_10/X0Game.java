@@ -14,8 +14,9 @@ public class X0Game {
     void play() {
         this.setupNewGame();
         System.out.print("Who will make first turn: ");
-        String next = this.scanner.next();
-        char first = next.charAt(0);
+//        String next = this.scanner.next();
+//        char first = next.charAt(0);
+        char first = this.scanner.next().charAt(0);
 
     }
 }
