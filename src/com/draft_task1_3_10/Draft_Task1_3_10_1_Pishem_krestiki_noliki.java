@@ -26,6 +26,7 @@ public class Draft_Task1_3_10_1_Pishem_krestiki_noliki {
 /*pablic */class FieldX0 {
     /*public */char[][] field;
     int size = 3;
+    int countToWin = 3;
 
     void initField() {
         this.field = new char[size][size];
@@ -72,7 +73,11 @@ public class Draft_Task1_3_10_1_Pishem_krestiki_noliki {
     }
 
     boolean isGameOver(char whoMakeNextTurn) {
-
+        for (int row = 0; row <= this.size - this.countToWin; row++) {
+            for (int col = 0; col <= this.size - this.countToWin; col++) {
+                if (this.field[row][col] == player && this.field[row][col+1] == player && this.field[row][col+2] == player)
+            }
+        }
         return false;
     }
 
