@@ -1,4 +1,4 @@
-//закончил видео мин: 20 05
+//закончил видео мин: 22 56 строка 75
 
 package com.draft_task1_3_10;
 import java.util.Scanner;
@@ -16,7 +16,8 @@ public class Draft_Task1_3_10_1_Pishem_krestiki_noliki {
 
 //        FieldX0 game = new FieldX0();
         X0Game game = new X0Game();
-        game.setupNewGame();
+//        game.setupNewGame();
+        game.play();
 
 
         }
@@ -34,6 +35,7 @@ public class Draft_Task1_3_10_1_Pishem_krestiki_noliki {
             }
         }
         System.out.println("Field initialized");
+        this.printField();
     }
     void printField(){
         System.out.print("   ");
@@ -70,6 +72,7 @@ public class Draft_Task1_3_10_1_Pishem_krestiki_noliki {
     }
 
     boolean isGameOver(char whoMakeNextTurn) {
+
         return false;
     }
 

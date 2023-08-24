@@ -16,7 +16,7 @@ public class X0Game {
     }
     void play() {
         this.setupNewGame();
-        System.out.print("Who will make first turn: ");
+        System.out.println("Who will make first turn: ");
 //        String next = this.scanner.next();
 //        char first = next.charAt(0);
         char first = this.scanner.next().charAt(0);
@@ -30,6 +30,7 @@ public class X0Game {
 
         while (!gameOver) {
             turn();
+            this.gameOver = this.gameField.isGameOver(this.whoMakeNextTurn);
             if (this.whoMakeNextTurn == 'X') {
                 this.whoMakeNextTurn = '0';
             } else {
@@ -40,14 +41,15 @@ public class X0Game {
 
     void turn() {
         System.out.println(this.whoMakeNextTurn + ", your turn. ");
-        System.out.println("Chose row: ");
+        System.out.print("Chose row: ");
         int rowNumber = this.scanner.nextInt();
-        System.out.println("Chose column: ");
+        System.out.print("Chose column: ");
         int colNumber = this.scanner.nextInt();
         int rowIndex = rowNumber - 1;
         int colIndex = colNumber - 1;
         if (this.gameField.isPlaceFree(rowIndex, colIndex)) {
             this.gameField.setValue(rowIndex, colIndex, whoMakeNextTurn);
+            this.gameField.printField();
         } else {
             System.out.println("Wrong number (maybe this place is not free?). Make turn again.");
             turn();
