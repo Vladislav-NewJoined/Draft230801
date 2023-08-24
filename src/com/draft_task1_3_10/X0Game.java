@@ -2,7 +2,7 @@ package com.draft_task1_3_10;
 
 import java.util.Scanner;
 
-//pf //  закончил видео мин 11 54
+//закончил видео мин 11 54
 public class X0Game {
     FieldX0 gameField;
     Scanner scanner = new Scanner (System.in);
