@@ -4,7 +4,7 @@ package com.draft_task1_3_10;
 
 import java.util.Scanner;
 
-//        Пример _ ППППППППППППППППППППППППППППППППППП  //Получилось рэндзю 9х9
+//        Пример _ ППППППППППППППППППППППППППППППППППП  //СДЕЛАН ОКОНЧАТЕЛЬНО, ОТПРАВЛЕН В ЭТОМ ВИДЕ !!!!!
 public class Draft_Task1_3_10_1_Pishem_krestiki_noliki {
     public static void main(String[] args) {
         X0Game game = new X0Game();
@@ -14,8 +14,8 @@ public class Draft_Task1_3_10_1_Pishem_krestiki_noliki {
 
 class FieldXO {
     char[][] field;
-    int size = 9;
-    int countToWin = 5;
+    int size = 3;
+    int countToWin = 3;
 
     void initField() {
         this.field = new char[size][size];
@@ -201,8 +201,9 @@ class X0Game {
 
 
 
-////        Пример 10 ППППППППППППППППППППППППППППППППППП  //ГОТОВО, мин 49 17 но есть продолжение видео, посмотреть что там
-//public class Draft_Task1_3_10_1_Pishem_krestiki_noliki_2 {
+
+////        Пример 10 ППППППППППППППППППППППППППППППППППП  //Получилось рэндзю 9х9
+//public class Draft_Task1_3_10_1_Pishem_krestiki_noliki {
 //    public static void main(String[] args) {
 //        X0Game game = new X0Game();
 //        game.play();
@@ -211,8 +212,8 @@ class X0Game {
 //
 //class FieldXO {
 //    char[][] field;
-//    int size = 3;
-//    int countToWin = 3;
+//    int size = 9;
+//    int countToWin = 5;
 //
 //    void initField() {
 //        this.field = new char[size][size];
@@ -399,7 +400,7 @@ class X0Game {
 
 
 ////        Пример 9 ППППППППППППППППППППППППППППППППППП  //правильно? до мин 47 57 давайте...
-//public class Draft_Task1_3_10_1_Pishem_krestiki_noliki_2 {
+//public class Draft_Task1_3_10_1_Pishem_krestiki_noliki {
 //    public static void main(String[] args) {
 //        X0Game game = new X0Game();
 //        game.play();
@@ -593,7 +594,7 @@ class X0Game {
 
 
 ////        Пример 8 ППППППППППППППППППППППППППППППППППП  //правильно до мин 39 25 сделали условие для победы в столбик
-//public class Draft_Task1_3_10_1_Pishem_krestiki_noliki_2 {
+//public class Draft_Task1_3_10_1_Pishem_krestiki_noliki {
 //    public static void main(String[] args) {
 //        X0Game game = new X0Game();
 //        game.play();
@@ -749,7 +750,7 @@ class X0Game {
 
 
 ////        Пример 7 ППППППППППППППППППППППППППППППППППП  //правильно до мин 37 46 нолик победил, игра закончена
-//public class Draft_Task1_3_10_1_Pishem_krestiki_noliki_2 {
+//public class Draft_Task1_3_10_1_Pishem_krestiki_noliki {
 //    public static void main(String[] args) {
 //        X0Game game = new X0Game();
 //        game.play();
@@ -893,7 +894,7 @@ class X0Game {
 
 ////        Пример 6 ППППППППППППППППППППППППППППППППППП  //вроде правильно до мин 30 11 , тогда нам нужно немножко
 ////        переделать, долго переделываем каждую ячейку
-//public class Draft_Task1_3_10_1_Pishem_krestiki_noliki_2 {
+//public class Draft_Task1_3_10_1_Pishem_krestiki_noliki {
 //    public static void main(String[] args) {
 //        X0Game game = new X0Game();
 //        game.play();
@@ -1029,7 +1030,7 @@ class X0Game {
 
 ////        Пример 5 ППППППППППППППППППППППППППППППППППП  //вроде правильно до мин 28 13 , что-то не сработало , перед долгими
 ////        объяснениями и долгой переделкой
-//public class Draft_Task1_3_10_1_Pishem_krestiki_noliki_2 {
+//public class Draft_Task1_3_10_1_Pishem_krestiki_noliki {
 //    public static void main(String[] args) {
 //        X0Game game = new X0Game();
 //        game.play();
@@ -1164,7 +1165,7 @@ class X0Game {
 
 
 ////        Пример 4 ППППППППППППППППППППППППППППППППППП  //вроде правильно до мин 22 08
-//public class Draft_Task1_3_10_1_Pishem_krestiki_noliki_2 {
+//public class Draft_Task1_3_10_1_Pishem_krestiki_noliki {
 //    public static void main(String[] args) {
 //        X0Game game = new X0Game();
 //        game.play();
@@ -1283,7 +1284,7 @@ class X0Game {
 
 
 ////        Пример 3 ППППППППППППППППППППППППППППППППППП  //вроде правильно до мин 21 19
-//public class Draft_Task1_3_10_1_Pishem_krestiki_noliki_2 {
+//public class Draft_Task1_3_10_1_Pishem_krestiki_noliki {
 //    public static void main(String[] args) {
 ////        FieldXO fieldXO = new FieldXO();
 ////        fieldXO.initField();
@@ -1406,7 +1407,7 @@ class X0Game {
 
 
 ////        Пример 2 ППППППППППППППППППППППППППППППППППП  //вроде правильно до мин 20 58
-//public class Draft_Task1_3_10_1_Pishem_krestiki_noliki_2 {
+//public class Draft_Task1_3_10_1_Pishem_krestiki_noliki {
 //    public static void main(String[] args) {
 ////        FieldXO fieldXO = new FieldXO();
 ////        fieldXO.initField();
@@ -1529,7 +1530,7 @@ class X0Game {
 
 
 ////        Пример 1 ППППППППППППППППППППППППППППППППППП  //вроде правильно до мин 19 37
-//public class Draft_Task1_3_10_1_Pishem_krestiki_noliki_2 {
+//public class Draft_Task1_3_10_1_Pishem_krestiki_noliki {
 //    public static void main(String[] args) {
 //        FieldXO fieldXO = new FieldXO();
 //        fieldXO.initField();
