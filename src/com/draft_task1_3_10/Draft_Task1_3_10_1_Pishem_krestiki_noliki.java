@@ -5,7 +5,7 @@ package com.draft_task1_3_10;
 import java.util.Scanner;
 
 //        Пример _ ППППППППППППППППППППППППППППППППППП  //Получилось рэндзю 9х9
-public class Draft_Task1_3_10_1_Pishem_krestiki_noliki_2 {
+public class Draft_Task1_3_10_1_Pishem_krestiki_noliki {
     public static void main(String[] args) {
         X0Game game = new X0Game();
         game.play();
