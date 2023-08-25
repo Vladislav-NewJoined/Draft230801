@@ -7,6 +7,7 @@ import javax.swing.*;
 import java.awt.*;
 
 //        Пример _ ППППППППППППППППППППППППППППППППППП  //правильно до конца, мин 11 16 , пример взят отсюда: https://youtu.be/1d1Seo3lO2M или https://www.youtube.com/watch?v=1d1Seo3lO2M
+//        далее вот здесь будет https://youtu.be/EwuooLH6N94
 
 public class Draft_Task1_3_10_2 extends JPanel {
 
