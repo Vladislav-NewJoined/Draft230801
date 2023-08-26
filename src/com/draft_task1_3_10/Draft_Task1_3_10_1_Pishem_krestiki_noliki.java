@@ -28,7 +28,6 @@ class FieldXO {
         for (int row = 0; row < size; row++) {
             for (int col = 0; col < size; col++) {
                 field[row][col] = ' ';
-
             }
         }
         System.out.println("Field initialized");
@@ -198,8 +197,6 @@ class X0Game {
             turn();
         }
     }
-
-
 }
 //        Конец Примера _ КККККККККККККККК
 

@@ -65,7 +65,7 @@ public class Draft_Task1_3_10_3 extends JPanel implements ActionListener {
         jFrame.setResizable(false);
         jFrame.setLocationRelativeTo(null);
 
-        jFrame.add(new Draft_Task1_3_10_2_clean_copy());
+        jFrame.add(new Draft_Task1_3_10_3());
 
         jFrame.setVisible(true);
     }
@@ -119,10 +119,22 @@ public class Draft_Task1_3_10_3 extends JPanel implements ActionListener {
         //left
         if (direction == 3) sX[0]--;
 
-        if (sX[0] > Draft_Task1_3_10_2_clean_copy.WIDTH - 1) sX[0] = 0;
-        if (sX[0] < 0) sX[0] = Draft_Task1_3_10_2_clean_copy.WIDTH - 1;
-        if (sY[0] > Draft_Task1_3_10_2_clean_copy.HEIGHT - 1) sY[0] = 0;
-        if (sY[0] < 0) sY[0] = Draft_Task1_3_10_2_clean_copy.HEIGHT - 1;
+        if (sX[0] > Draft_Task1_3_10_3.WIDTH - 1) /*sX[0] = 0*/ {
+            System.out.println("Snake collided into wall. Game over.");
+            System.exit(0);
+        }
+        if (sX[0] < 0) /*sX[0] = Draft_Task1_3_10_3.WIDTH - 1*/ {
+            System.out.println("Snake collided into wall. Game over.");
+            System.exit(0);
+        }
+        if (sY[0] > Draft_Task1_3_10_3.HEIGHT - 1) /*sY[0] = 0*/ {
+            System.out.println("Snake collided into wall. Game over.");
+            System.exit(0);
+        }
+        if (sY[0] < 0) /*sY[0] = Draft_Task1_3_10_3.HEIGHT - 1*/ {
+            System.out.println("Snake collided into wall. Game over.");
+            System.exit(0);
+        }
     }
 }
 

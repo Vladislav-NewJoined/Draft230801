@@ -55,7 +55,8 @@ public class Draft_Task1_3_10_4 extends JPanel implements ActionListener {
     public static void main(String[] args) {
         System.out.println("""
                 Задание:\s
-                3. Доработайте змейку, что б при врезании в стену(край поля) - игра оканчивалась
+                4. Доработайте змейку, что б на поле были фрукты. Если змейка их съедает -
+                   она растет. Если съела все фрукты - игрок победил.
 
                 Решение:\s""");
 
@@ -65,7 +66,7 @@ public class Draft_Task1_3_10_4 extends JPanel implements ActionListener {
         jFrame.setResizable(false);
         jFrame.setLocationRelativeTo(null);
 
-        jFrame.add(new Draft_Task1_3_10_2_clean_copy());
+        jFrame.add(new Draft_Task1_3_10_4());
 
         jFrame.setVisible(true);
     }
@@ -119,10 +120,10 @@ public class Draft_Task1_3_10_4 extends JPanel implements ActionListener {
         //left
         if (direction == 3) sX[0]--;
 
-        if (sX[0] > Draft_Task1_3_10_2_clean_copy.WIDTH - 1) sX[0] = 0;
-        if (sX[0] < 0) sX[0] = Draft_Task1_3_10_2_clean_copy.WIDTH - 1;
-        if (sY[0] > Draft_Task1_3_10_2_clean_copy.HEIGHT - 1) sY[0] = 0;
-        if (sY[0] < 0) sY[0] = Draft_Task1_3_10_2_clean_copy.HEIGHT - 1;
+        if (sX[0] > Draft_Task1_3_10_4.WIDTH - 1) sX[0] = 0;
+        if (sX[0] < 0) sX[0] = Draft_Task1_3_10_4.WIDTH - 1;
+        if (sY[0] > Draft_Task1_3_10_4.HEIGHT - 1) sY[0] = 0;
+        if (sY[0] < 0) sY[0] = Draft_Task1_3_10_4.HEIGHT - 1;
     }
 }
 
