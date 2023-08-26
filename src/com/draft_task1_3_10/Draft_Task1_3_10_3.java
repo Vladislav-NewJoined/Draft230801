@@ -55,10 +55,7 @@ public class Draft_Task1_3_10_3 extends JPanel implements ActionListener {
     public static void main(String[] args) {
         System.out.println("""
                 Задание:\s
-                2. Напишите “змейку”. Есть поле 20х20, есть змейка длинной, пусть, 3
-                квадрата. Выводится поле с положением змейки. Пользователь вводит, куда
-                сделать следующий шаг - повернуть, или не двигаться. Рисуется поле с
-                новым положением змейки.
+                3. Доработайте змейку, что б при врезании в стену(край поля) - игра оканчивалась
 
                 Решение:\s""");
 
@@ -124,7 +121,6 @@ public class Draft_Task1_3_10_3 extends JPanel implements ActionListener {
 
         if (sX[0] > Draft_Task1_3_10_2_clean_copy.WIDTH - 1) sX[0] = 0;
         if (sX[0] < 0) sX[0] = Draft_Task1_3_10_2_clean_copy.WIDTH - 1;
-
         if (sY[0] > Draft_Task1_3_10_2_clean_copy.HEIGHT - 1) sY[0] = 0;
         if (sY[0] < 0) sY[0] = Draft_Task1_3_10_2_clean_copy.HEIGHT - 1;
     }
@@ -152,7 +148,7 @@ public class Draft_Task1_3_10_3 extends JPanel implements ActionListener {
 //    public static final int HEIGHT = 20;
 //    public static int speed = 10;
 //
-//    Snake_clean_copy_3 s = new Snake_clean_copy_3(5, 6, 5, 5);
+//    Snake_clean_copy_4 s = new Snake_clean_copy_4(5, 6, 5, 5);
 //    Timer timer = new Timer(1000/speed, this);
 //
 //    public Draft_Task1_3_10_2_clean_copy() {
@@ -219,7 +215,7 @@ public class Draft_Task1_3_10_3 extends JPanel implements ActionListener {
 //    }
 //}
 //
-///*public */class Snake_clean_copy_3 {
+///*public */class Snake_clean_copy_4 {
 //
 //    public int length = 2;
 //    public int direction = 2;
@@ -227,7 +223,7 @@ public class Draft_Task1_3_10_3 extends JPanel implements ActionListener {
 //    public int sX[] = new int[300];
 //    public int sY[] = new int[300];
 //
-//    public Snake_clean_copy_3(int x1, int y1, int x2, int y2) {
+//    public Snake_clean_copy_4(int x1, int y1, int x2, int y2) {
 //        sX[0] = x1;
 //        sX[1] = x2;
 //        sY[0] = y1;
@@ -279,7 +275,7 @@ public class Draft_Task1_3_10_3 extends JPanel implements ActionListener {
 //    public static final int HEIGHT = 20;
 //    public static int speed = 10;
 //
-//    Snake_clean_copy_3 s = new Snake_clean_copy_3(5, 6, 5, 5);
+//    Snake_clean_copy_4 s = new Snake_clean_copy_4(5, 6, 5, 5);
 //    Timer timer = new Timer(1000/speed, this);
 //
 //    public Draft_Task1_3_10_2_clean_copy() {
@@ -333,7 +329,7 @@ public class Draft_Task1_3_10_3 extends JPanel implements ActionListener {
 //    }
 //}
 //
-///*public */class Snake_clean_copy_3 {
+///*public */class Snake_clean_copy_4 {
 //
 //    public int length = 2;
 //    public int direction = 0;
@@ -341,7 +337,7 @@ public class Draft_Task1_3_10_3 extends JPanel implements ActionListener {
 //    public int sX[] = new int[300];
 //    public int sY[] = new int[300];
 //
-//    public Snake_clean_copy_3(int x1, int y1, int x2, int y2) {
+//    public Snake_clean_copy_4(int x1, int y1, int x2, int y2) {
 //        sX[0] = x1;
 //        sX[1] = x2;
 //        sY[0] = y1;
@@ -387,7 +383,7 @@ public class Draft_Task1_3_10_3 extends JPanel implements ActionListener {
 //    public static final int HEIGHT = 20;
 //    public static int speed = 10;
 //
-//    Snake_clean_copy_3 s = new Snake_clean_copy_3(5, 6, 5, 5);
+//    Snake_clean_copy_4 s = new Snake_clean_copy_4(5, 6, 5, 5);
 //    Timer timer = new Timer(1000/speed, this);
 //
 //    public Draft_Task1_3_10_2_clean_copy() {
@@ -441,7 +437,7 @@ public class Draft_Task1_3_10_3 extends JPanel implements ActionListener {
 //    }
 //}
 //
-///*public */class Snake_clean_copy_3 {
+///*public */class Snake_clean_copy_4 {
 //
 //    public int length = 2;
 //    public int direction = 0;
@@ -449,7 +445,7 @@ public class Draft_Task1_3_10_3 extends JPanel implements ActionListener {
 //    public int sX[] = new int[300];
 //    public int sY[] = new int[300];
 //
-//    public Snake_clean_copy_3(int x1, int y1, int x2, int y2) {
+//    public Snake_clean_copy_4(int x1, int y1, int x2, int y2) {
 //        sX[0] = x1;
 //        sX[1] = x2;
 //        sY[0] = y1;
@@ -495,7 +491,7 @@ public class Draft_Task1_3_10_3 extends JPanel implements ActionListener {
 //    public static final int HEIGHT = 20;
 //    public static int speed = 10;
 //
-//    Snake_clean_copy_3 s = new Snake_clean_copy_3(5, 6, 5, 5);
+//    Snake_clean_copy_4 s = new Snake_clean_copy_4(5, 6, 5, 5);
 //    Timer timer = new Timer(1000/speed, this);
 //
 //    public void Draft_Task1_3_10_2_clean_copy() {
@@ -548,7 +544,7 @@ public class Draft_Task1_3_10_3 extends JPanel implements ActionListener {
 //    }
 //}
 //
-///*public */class Snake_clean_copy_3 {
+///*public */class Snake_clean_copy_4 {
 //
 //    public int length = 2;
 //    public int direction = 0;
@@ -556,7 +552,7 @@ public class Draft_Task1_3_10_3 extends JPanel implements ActionListener {
 //    public int sX[] = new int[300];
 //    public int sY[] = new int[300];
 //
-//    public Snake_clean_copy_3(int x1, int y1, int x2, int y2) {
+//    public Snake_clean_copy_4(int x1, int y1, int x2, int y2) {
 //        sX[0] = x1;
 //        sX[1] = x2;
 //        sY[0] = y1;
@@ -601,7 +597,7 @@ public class Draft_Task1_3_10_3 extends JPanel implements ActionListener {
 //    public static final int WIDTH = 20;
 //    public static final int HEIGHT = 20;
 //
-//    Snake_clean_copy_3 s = new Snake_clean_copy_3(5, 6, 5, 5);
+//    Snake_clean_copy_4 s = new Snake_clean_copy_4(5, 6, 5, 5);
 //
 //    public void Draft_Task1_3_10_2_clean_copy() {
 //
@@ -648,7 +644,7 @@ public class Draft_Task1_3_10_3 extends JPanel implements ActionListener {
 //    }
 //}
 //
-///*public */class Snake_clean_copy_3 {
+///*public */class Snake_clean_copy_4 {
 //
 //    public int length = 2;
 //    public int direction = 0;
@@ -656,7 +652,7 @@ public class Draft_Task1_3_10_3 extends JPanel implements ActionListener {
 //    public int sX[] = new int[300];
 //    public int sY[] = new int[300];
 //
-//    public Snake_clean_copy_3(int x1, int y1, int x2, int y2) {
+//    public Snake_clean_copy_4(int x1, int y1, int x2, int y2) {
 //        sX[0] = x1;
 //        sX[1] = x2;
 //        sY[0] = y1;
@@ -741,7 +737,7 @@ public class Draft_Task1_3_10_3 extends JPanel implements ActionListener {
 //    }
 //}
 //
-///*public */class Snake_clean_copy_3 {
+///*public */class Snake_clean_copy_4 {
 //
 //    public int length = 2;
 //    public int direction = 0;
@@ -749,7 +745,7 @@ public class Draft_Task1_3_10_3 extends JPanel implements ActionListener {
 //    public int sX[] = new int[300];
 //    public int sY[] = new int[300];
 //
-//    public Snake_clean_copy_3(int x1, int y1, int x2, int y2) {
+//    public Snake_clean_copy_4(int x1, int y1, int x2, int y2) {
 //        sX[0] = x1;
 //        sX[1] = x2;
 //        sY[0] = y1;
@@ -884,19 +880,19 @@ public class Draft_Task1_3_10_3 extends JPanel implements ActionListener {
 //
 //                Решение:\s""");
 //
-//        Snake_clean_copy_3 test = new Snake_clean_copy_3();
+//        Snake_clean_copy_4 test = new Snake_clean_copy_4();
 //        test.test();
 //
-//        String anotherTest = "Snake_clean_copy_3 test_Another test";
+//        String anotherTest = "Snake_clean_copy_4 test_Another test";
 //        AnotherTest str = new AnotherTest();
 //        str.anotherTest(anotherTest);
 //    }
 //}
 //
-//class Snake_clean_copy_3 extends JPanel {
+//class Snake_clean_copy_4 extends JPanel {
 //
 //    /*static */void test() {
-//        System.out.println("Snake_clean_copy_3 test");
+//        System.out.println("Snake_clean_copy_4 test");
 //    }
 //}
 //

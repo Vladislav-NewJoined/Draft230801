@@ -16,7 +16,7 @@ import java.awt.event.KeyEvent;
 //        Пример _ ППППППППППППППППППППППППППППППППППП  /третья часть закончена, правильно до конца третьей части, отсюда:
 //        третья часть https://www.youtube.com/watch?v=UEjMMnBGmgw
 
-public class Draft_Task1_3_10_2_Pishem_zmeiku extends JPanel implements ActionListener {
+public class Draft_Task1_3_10_4 extends JPanel implements ActionListener {
 
     public static JFrame jFrame;
     public static final int SCALE = 32;
@@ -27,7 +27,7 @@ public class Draft_Task1_3_10_2_Pishem_zmeiku extends JPanel implements ActionLi
     Snake_clean_copy_4 s = new Snake_clean_copy_4(5, 6, 5, 5);
     Timer timer = new Timer(1000/speed, this);
 
-    public Draft_Task1_3_10_2_Pishem_zmeiku() {
+    public Draft_Task1_3_10_4() {
         timer.start();
         addKeyListener(new KeyBoard());
         setFocusable(true);
@@ -55,10 +55,7 @@ public class Draft_Task1_3_10_2_Pishem_zmeiku extends JPanel implements ActionLi
     public static void main(String[] args) {
         System.out.println("""
                 Задание:\s
-                2. Напишите “змейку”. Есть поле 20х20, есть змейка длинной, пусть, 3
-                квадрата. Выводится поле с положением змейки. Пользователь вводит, куда
-                сделать следующий шаг - повернуть, или не двигаться. Рисуется поле с
-                новым положением змейки.
+                3. Доработайте змейку, что б при врезании в стену(край поля) - игра оканчивалась
 
                 Решение:\s""");
 
@@ -91,7 +88,7 @@ public class Draft_Task1_3_10_2_Pishem_zmeiku extends JPanel implements ActionLi
     }
 }
 
-/*public */class Snake {
+/*public */class Snake_clean_copy_4 {
 
     public int length = 2;
     public int direction = 2;
@@ -99,7 +96,7 @@ public class Draft_Task1_3_10_2_Pishem_zmeiku extends JPanel implements ActionLi
     public int sX[] = new int[300];
     public int sY[] = new int[300];
 
-    public Snake(int x1, int y1, int x2, int y2) {
+    public Snake_clean_copy_4(int x1, int y1, int x2, int y2) {
         sX[0] = x1;
         sX[1] = x2;
         sY[0] = y1;
@@ -124,7 +121,6 @@ public class Draft_Task1_3_10_2_Pishem_zmeiku extends JPanel implements ActionLi
 
         if (sX[0] > Draft_Task1_3_10_2_clean_copy.WIDTH - 1) sX[0] = 0;
         if (sX[0] < 0) sX[0] = Draft_Task1_3_10_2_clean_copy.WIDTH - 1;
-
         if (sY[0] > Draft_Task1_3_10_2_clean_copy.HEIGHT - 1) sY[0] = 0;
         if (sY[0] < 0) sY[0] = Draft_Task1_3_10_2_clean_copy.HEIGHT - 1;
     }
