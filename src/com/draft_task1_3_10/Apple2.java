@@ -6,7 +6,6 @@ public class Apple2 {
     public int posY2;
 
     public  Apple2(int x2, int y2) {
-
         posX2 = x2;
         posY2 = y2;
     }

@@ -4,6 +4,7 @@ public class Snake_3 {
 
     public int length = 2;
     public int direction = 2;
+    public int countApples = 0;
 
     public int sX[] = new int[300];
     public int sY[] = new int[300];
@@ -47,10 +48,6 @@ public class Snake_3 {
 //            System.out.println("Snake collided into wall. Game over.");
 //            System.exit(0);
 //        }
-
-
-
-
 
     }
 }
