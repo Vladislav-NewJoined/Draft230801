@@ -1,6 +1,7 @@
 package com.draft_task1_3_10;
 
 public class Snake_3 {
+
     public int length = 2;
     public int direction = 2;
 
@@ -30,21 +31,26 @@ public class Snake_3 {
         //left
         if (direction == 3) sX[0]--;
 
-        if (sX[0] > Draft_Task1_3_10_3.WIDTH - 1) /*sX[0] = 0*/ {
-            System.out.println("Snake collided into wall. Game over.");
-            System.exit(0);
-        }
-        if (sX[0] < 0) /*sX[0] = Draft_Task1_3_10_3.WIDTH - 1*/ {
-            System.out.println("Snake collided into wall. Game over.");
-            System.exit(0);
-        }
-        if (sY[0] > Draft_Task1_3_10_3.HEIGHT - 1) /*sY[0] = 0*/ {
-            System.out.println("Snake collided into wall. Game over.");
-            System.exit(0);
-        }
-        if (sY[0] < 0) /*sY[0] = Draft_Task1_3_10_3.HEIGHT - 1*/ {
-            System.out.println("Snake collided into wall. Game over.");
-            System.exit(0);
-        }
+//        if (sX[0] > Draft_Task1_3_10_3.WIDTH - 1) /*sX[0] = 0*/ {
+//            System.out.println("Snake collided into wall. Game over.");
+//            System.exit(0);
+//        }
+//        if (sX[0] < 0) /*sX[0] = Draft_Task1_3_10_3.WIDTH - 1*/ {
+//            System.out.println("Snake collided into wall. Game over.");
+//            System.exit(0);
+//        }
+//        if (sY[0] > Draft_Task1_3_10_3.HEIGHT - 1) /*sY[0] = 0*/ {
+//            System.out.println("Snake collided into wall. Game over.");
+//            System.exit(0);
+//        }
+//        if (sY[0] < 0) /*sY[0] = Draft_Task1_3_10_3.HEIGHT - 1*/ {
+//            System.out.println("Snake collided into wall. Game over.");
+//            System.exit(0);
+//        }
+
+
+
+
+
     }
 }

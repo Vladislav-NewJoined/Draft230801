@@ -8,7 +8,7 @@ public class Apple {
     public  Apple(int x, int y) {
 
         posX = x;
-        posX = y;
+        posY = y;
     }
 
     public void setRandomPosition() {
