@@ -87,6 +87,7 @@ public class Draft_Task1_3_10_4 extends JPanel implements ActionListener {
 
         //пишем условие для победы (съедено 4 яблока)
         if ((s.sX[0] == apple.posX) && (s.sY[0] == apple.posY)) {
+//            s.length++;
             s.countApples++;
             if (s.countApples == 4) {
                 timer.stop();
@@ -97,6 +98,7 @@ public class Draft_Task1_3_10_4 extends JPanel implements ActionListener {
         }
 
         if ((s.sX[0] == apple2.posX2) && (s.sY[0] == apple2.posY2)) {
+//            s.length++;
             s.countApples++;
             if (s.countApples == 4) {
                 timer.stop();
