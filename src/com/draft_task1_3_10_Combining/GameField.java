@@ -8,8 +8,8 @@ import java.awt.event.KeyAdapter;
 import java.awt.event.KeyEvent;
 import java.util.Random;
 
-//        Пример _ ППППППППППППППППППППППППППППППППППП  Увеличение игрового поля
-// теперь совместить с другой инструкцией, третья часть закончена https://github.com/irinamore/snake_part3-final-/tree/master/src
+////        Пример _ ППППППППППППППППППППППППППППППППППП  Увеличение игрового поля
+//// теперь совместить с другой инструкцией, третья часть закончена https://github.com/irinamore/snake_part3-final-/tree/master/src
 public class GameField extends JPanel implements ActionListener{
     private final int SIZE = 320;
     private final int DOT_SIZE = 16;
@@ -33,7 +33,6 @@ public class GameField extends JPanel implements ActionListener{
         setBackground(Color.black);
         loadImages();
         initGame();
-        //Добавить обработчик событий , 3 часть , мин 03 50
         addKeyListener(new FieldKeyListener());
         setFocusable(true);
 
@@ -70,12 +69,11 @@ public class GameField extends JPanel implements ActionListener{
             for (int i = 0; i < dots; i++) {
                 g.drawImage(dot,x[i],y[i],this);
             }
-        } else {
-            //Это как заканчивать игру, окончание игры
+        } else{
             String str = "Game Over";
-//            Font f = new Font("Arial",14,Font.BOLD);
+            //Font f = new Font("Arial",14,Font.BOLD);
             g.setColor(Color.white);
-//            g.setFont(f);
+            // g.setFont(f);
             g.drawString(str,125,SIZE/2);
         }
     }
@@ -136,7 +134,7 @@ public class GameField extends JPanel implements ActionListener{
         repaint();
     }
 
-    class FieldKeyListener extends KeyAdapter {
+    class FieldKeyListener extends KeyAdapter{
         @Override
         public void keyPressed(KeyEvent e) {
             super.keyPressed(e);
@@ -146,7 +144,6 @@ public class GameField extends JPanel implements ActionListener{
                 up = false;
                 down = false;
             }
-
             if(key == KeyEvent.VK_RIGHT && !left){
                 right = true;
                 up = false;
@@ -158,7 +155,6 @@ public class GameField extends JPanel implements ActionListener{
                 up = true;
                 left = false;
             }
-
             if(key == KeyEvent.VK_DOWN && !up){
                 right = false;
                 down = true;
@@ -167,7 +163,7 @@ public class GameField extends JPanel implements ActionListener{
         }
     }
 }
-//        Конец Примера _ КККККККККККККККК
+////        Конец Примера _ КККККККККККККККК
 
 
 
@@ -176,6 +172,14 @@ public class GameField extends JPanel implements ActionListener{
 
 
 ////        Пример 4 ППППППППППППППППППППППППППППППППППП  теперь совместить с другой инструкцией, третья часть закончена https://github.com/irinamore/snake_part3-final-/tree/master/src//public class GameField extends JPanel implements ActionListener{
+//public class GameField extends JPanel implements ActionListener{
+//    GameField s = new GameField();
+//    Apple apple = new Apple(Math.abs((int) (Math.random()* Draft_Task1_3_10_4.WIDTH-1)), Math.abs((int) (Math.random()*Draft_Task1_3_10_4.HEIGHT-1)));
+//    Apple2 apple2 = new Apple2(Math.abs((int) (Math.random()*Draft_Task1_3_10_4.WIDTH-1)), Math.abs((int) (Math.random()*Draft_Task1_3_10_4.HEIGHT-1)));
+//
+//    public int sX[] = new int[300];
+//    public int sY[] = new int[300];
+//
 //    private final int SIZE = 320;
 //    private final int DOT_SIZE = 16;
 //    private final int ALL_DOTS = 400;

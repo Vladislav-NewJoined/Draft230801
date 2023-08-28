@@ -1,5 +1,7 @@
 package com.draft_task1_3_10_Combining;
 
+import com.draft_task1_3_10.Snake_3;
+
 import javax.swing.*;
 
 //пример взят отсюда: https://www.youtube.com/@user-kn1dy2bl7i/videos Змейка, все части_Ирина Галкина - YouTube
@@ -11,9 +13,11 @@ public class MainWindow extends JFrame {
         setTitle("Змейка");
         setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
         setSize(320,345);
+//        setSize(640,640);
         setLocation(400,400);
         add(new GameField());
         setVisible(true);
+
     }
 
     public static void main(String[] args) {
