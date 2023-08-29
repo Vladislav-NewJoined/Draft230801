@@ -84,6 +84,8 @@ public class Draft_Task1_3_10_4 extends JPanel implements ActionListener {
         jFrame.add(new Draft_Task1_3_10_4());
 
         jFrame.setVisible(true);
+
+        JOptionPane.showMessageDialog(null, "To win, snake must eat 4 apples.");
     }
 
     @Override
