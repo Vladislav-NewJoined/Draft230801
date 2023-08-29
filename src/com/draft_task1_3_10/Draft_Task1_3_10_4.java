@@ -28,7 +28,7 @@ public class Draft_Task1_3_10_4 extends JPanel implements ActionListener {
     public static final int HEIGHT = 20;
     public static int speed = 2;
 
-    Snake_4 s = new Snake_4(5, 6, 5, 5, 5, 4);
+    static Snake_4 s = new Snake_4(5, 6, 5, 5, 5, 4);
     Apple apple = new Apple(Math.abs((int) (Math.random()*Draft_Task1_3_10_4.WIDTH-1)), Math.abs((int) (Math.random()*Draft_Task1_3_10_4.HEIGHT-1)));
     Apple2 apple2 = new Apple2(Math.abs((int) (Math.random()*Draft_Task1_3_10_4.WIDTH-1)), Math.abs((int) (Math.random()*Draft_Task1_3_10_4.HEIGHT-1)));
     Timer timer = new Timer(1000/speed, this);
@@ -86,11 +86,14 @@ public class Draft_Task1_3_10_4 extends JPanel implements ActionListener {
         jFrame.setVisible(true);
 
         JOptionPane.showMessageDialog(null, "To win, snake must eat 4 apples.");
+//        s.move();
+//        timer.start();
     }
 
     @Override
     public void actionPerformed(ActionEvent e) {
         s.move();
+//        timer.stop();
 
         //пишем условие для победы (съедено 4 яблока)
         if ((s.sX[0] == apple.posX) && (s.sY[0] == apple.posY)) {
