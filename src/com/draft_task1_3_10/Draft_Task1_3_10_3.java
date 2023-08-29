@@ -24,7 +24,7 @@ public class Draft_Task1_3_10_3 extends JPanel implements ActionListener {
     public static final int HEIGHT = 20;
     public static int speed = 10;
 
-    Snake_3 s = new Snake_3(5, 6, 5, 5);
+    Snake_3 s = new Snake_3(5, 6, 5, 5, 5, 4);
     Timer timer = new Timer(1000/speed, this);
 
     public Draft_Task1_3_10_3() {
