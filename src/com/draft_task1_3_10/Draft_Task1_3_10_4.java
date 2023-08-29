@@ -155,25 +155,25 @@ public class Draft_Task1_3_10_4 extends JPanel implements ActionListener {
             }
 
             //Snake collided into wall.
-            if (s.sX[0] > Draft_Task1_3_10_3.WIDTH - 1) /*sX[0] = 0*/ {
+            if (s.sX[0] > Draft_Task1_3_10_3.WIDTH - 1) {
                 timer.stop();
                 JOptionPane.showMessageDialog(null, "You lost. Snake collided into wall. Game over."/* + "Start again?"*/);
                 jFrame.setVisible(false);
                 System.exit(0);
             }
-            if (s.sX[0] < 0) /*sX[0] = Draft_Task1_3_10_3.WIDTH - 1*/ {
+            if (s.sX[0] < 0) {
                 timer.stop();
                 JOptionPane.showMessageDialog(null, "You lost. Snake collided into wall. Game over."/* + "Start again?"*/);
                 jFrame.setVisible(false);
                 System.exit(0);
             }
-            if (s.sY[0] > Draft_Task1_3_10_3.HEIGHT - 1) /*sY[0] = 0*/ {
+            if (s.sY[0] > Draft_Task1_3_10_3.HEIGHT - 1) {
                 timer.stop();
                 JOptionPane.showMessageDialog(null, "You lost. Snake collided into wall. Game over."/* + "Start again?"*/);
                 jFrame.setVisible(false);
                 System.exit(0);
             }
-            if (s.sY[0] < 0) /*sY[0] = Draft_Task1_3_10_3.HEIGHT - 1*/ {
+            if (s.sY[0] < 0) {
                 timer.stop();
                 JOptionPane.showMessageDialog(null, "You lost. Snake collided into wall. Game over."/* + "Start again?"*/);
                 jFrame.setVisible(false);
