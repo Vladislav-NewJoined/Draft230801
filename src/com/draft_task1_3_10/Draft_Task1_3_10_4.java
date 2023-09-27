@@ -108,7 +108,8 @@ public class Draft_Task1_3_10_4 extends JPanel implements ActionListener {
 
     @Override
     public void actionPerformed(ActionEvent e) {
-//            //Лучше условие: Появление первоначальной таблички про победу после 4-х яблок.
+//            ПРОПИСЫВАЕМ MUST EAT 4 APPLES чтобы не каждый раз
+              // Лучше условие: Появление первоначальной таблички про победу после 4-х яблок.
         s.move();
         timer.start();
 //        timer.restart();
@@ -123,6 +124,23 @@ public class Draft_Task1_3_10_4 extends JPanel implements ActionListener {
 //                break;
                 }
 //            //Конец: лучше условие: Появление первоначальной таблички про победу после 4-х яблок.
+
+////            ПРОПИСЫВАЕМ MUST EAT 4 APPLES чтобы не каждый раз
+//              // Лучше условие: Появление первоначальной таблички про победу после 4-х яблок.
+//        s.move();
+//        timer.start();
+////        timer.restart();
+//
+//                if ((s.sX[0] == 5) && (s.sY[0] == 7)) {
+//                    timer.stop();
+//                    JOptionPane.showMessageDialog(null, "To win, snake must eat 4 apples.");
+////                jFrame.setVisible(false);
+//                    jFrame.setVisible(true);
+//                    timer.restart();
+////                System.exit(0);
+////                break;
+//                }
+////            //Конец: лучше условие: Появление первоначальной таблички про победу после 4-х яблок.
 
 
 
