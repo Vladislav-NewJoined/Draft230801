@@ -16,7 +16,7 @@ import java.awt.event.KeyEvent;
 //        Пример _ ППППППППППППППППППППППППППППППППППП  // _
 // во второй части создание таймера Timer мин 15 59
 // и здесь же описание все действия, происходящие в игре , змейка врезается в себя, змейка встречается с яблоком
-public class Draft_Task1_3_10_4 extends JPanel implements ActionListener {
+public class Draft_Task1_3_10_4_3copy extends JPanel implements ActionListener {
 
     public static JFrame jFrame;
     public static final int SCALE = 32;
@@ -25,15 +25,14 @@ public class Draft_Task1_3_10_4 extends JPanel implements ActionListener {
     public static int speed = 2;
 
     static Snake_4 s = new Snake_4(5, 6, 5, 5, 5, 4);
-    Apple apple = new Apple(Math.abs((int) (Math.random() * Draft_Task1_3_10_4.WIDTH - 1)), Math.abs((int) (Math.random() * Draft_Task1_3_10_4.HEIGHT - 1)));
-    Apple2 apple2 = new Apple2(Math.abs((int) (Math.random() * Draft_Task1_3_10_4.WIDTH - 1)), Math.abs((int) (Math.random() * Draft_Task1_3_10_4.HEIGHT - 1)));
+    Apple apple = new Apple(Math.abs((int) (Math.random() * Draft_Task1_3_10_4_3copy.WIDTH - 1)), Math.abs((int) (Math.random() * Draft_Task1_3_10_4_3copy.HEIGHT - 1)));
+    Apple2 apple2 = new Apple2(Math.abs((int) (Math.random() * Draft_Task1_3_10_4_3copy.WIDTH - 1)), Math.abs((int) (Math.random() * Draft_Task1_3_10_4_3copy.HEIGHT - 1)));
     Timer timer = new Timer(1000 / speed, this);
 
     static Obstacle o = new Obstacle(14, 2, 14, 1, 14, 0);
     static Obstacle2 o2 = new Obstacle2(4, 17, 5, 17, 6, 17, 7, 17);
 
-    public Draft_Task1_3_10_4() {
-        int n = 0;
+    public Draft_Task1_3_10_4_3copy() {
         timer.start();
         addKeyListener(new KeyBoard());
         setFocusable(true); //Это чтобы находилось в центре экрана, 3 часть 08 57 , https://youtu.be/UEjMMnBGmgw
@@ -75,13 +74,6 @@ public class Draft_Task1_3_10_4 extends JPanel implements ActionListener {
             g.fillRect(o2.oX2[l] * SCALE, o2.oY2[l] * SCALE, SCALE, SCALE);
         }
         //конец раздела: Отрисовываем стены (препятствия)
-
-
-    }
-
-    public static Integer countCycles() {
-        int counter = 0;
-        return counter;
     }
 
     public static void main(String[] args) {
@@ -100,13 +92,8 @@ public class Draft_Task1_3_10_4 extends JPanel implements ActionListener {
         jFrame.setResizable(false);
         jFrame.setLocationRelativeTo(null);
 
-        jFrame.add(new Draft_Task1_3_10_4());
+        jFrame.add(new Draft_Task1_3_10_4_3copy());
         jFrame.setVisible(true);
-
-        //таймер отладить
-//        s.move();
-//        JOptionPane.showMessageDialog(null, "To win, snake must eat 4 apples.");
-//        s.move();
     }
 
     @Override
@@ -123,8 +110,6 @@ public class Draft_Task1_3_10_4 extends JPanel implements ActionListener {
 //                jFrame.setVisible(false);
                     jFrame.setVisible(true);
                     timer.restart();
-//                System.exit(0);
-//                break;
                 }
 //            //Конец: лучше условие: Появление первоначальной таблички про победу после 4-х яблок.
 
@@ -241,11 +226,11 @@ public class Draft_Task1_3_10_4 extends JPanel implements ActionListener {
 //                repaint();
                     timer.stop();
                     JOptionPane.showMessageDialog(null, "CRASH WITH OBSTACLE");
-//                jFrame.setVisible(false);
-                    jFrame.setVisible(true);
-                    timer.restart();
-//                System.exit(0);
+                    jFrame.setVisible(false);
+//                    jFrame.setVisible(true);
+//                    timer.restart();
 //                break;
+                    System.exit(0);
                 }
             }
         }
@@ -256,11 +241,11 @@ public class Draft_Task1_3_10_4 extends JPanel implements ActionListener {
 //                repaint();
                     timer.stop();
                     JOptionPane.showMessageDialog(null, "CRASH WITH OBSTACLE");
-//                jFrame.setVisible(false);
-                    jFrame.setVisible(true);
-                    timer.restart();
-//                System.exit(0);
+                    jFrame.setVisible(false);
+//                    jFrame.setVisible(true);
+//                    timer.restart();
 //                break;
+                    System.exit(0);
                 }
             }
         }
@@ -296,8 +281,6 @@ public class Draft_Task1_3_10_4 extends JPanel implements ActionListener {
             }
 //        }
         repaint();
-
-//        countCycles.counter = countCycles.counter + 1;
     }
 
     public class KeyBoard extends KeyAdapter {

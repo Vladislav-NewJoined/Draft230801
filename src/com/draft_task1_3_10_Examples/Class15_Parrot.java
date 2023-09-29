@@ -12,6 +12,7 @@ public class Class15_Parrot {
     public void countCall() {
         for (int i = 0; i < 4; i++) {
             System.out.println(callCounter);
+//            break;
             callCounter++;
         }
 
