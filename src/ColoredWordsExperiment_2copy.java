@@ -2,7 +2,7 @@ import java.awt.event.*;
 import javax.swing.*;
 
 //@SuppressWarnings("serial")
-public class ColoredWordsExperiment extends JPanel {
+public class ColoredWordsExperiment_2copy extends JPanel {
 //    Timer timer;
     Timer timer1;
 //    TimerAction timeraction;
@@ -15,7 +15,7 @@ public class ColoredWordsExperiment extends JPanel {
 //    private JLabel counterLabel = new JLabel("   ");
     private JLabel counter1Label = new JLabel("   ");
 
-    ColoredWordsExperiment() {
+    ColoredWordsExperiment_2copy() {
         button1 = new JButton("Matching");
         button3 = new JButton("Finished");
 
@@ -65,7 +65,7 @@ public class ColoredWordsExperiment extends JPanel {
 
 
     private static void createAndShowGui() {
-        ColoredWordsExperiment mainPanel = new ColoredWordsExperiment();
+        ColoredWordsExperiment_2copy mainPanel = new ColoredWordsExperiment_2copy();
 
         JFrame frame = new JFrame("Colored Words Experiment");
         frame.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
@@ -85,9 +85,9 @@ public class ColoredWordsExperiment extends JPanel {
 }
 
 class ButtonHandler implements ActionListener {
-    ColoredWordsExperiment coloredWords;
+    ColoredWordsExperiment_2copy coloredWords;
 
-    public ButtonHandler(ColoredWordsExperiment coloredWords) {
+    public ButtonHandler(ColoredWordsExperiment_2copy coloredWords) {
         this.coloredWords = coloredWords;
     }
 
@@ -108,9 +108,9 @@ class ButtonHandler implements ActionListener {
 }
 
 class TimerAction implements ActionListener {
-    ColoredWordsExperiment coloredWords;
+    ColoredWordsExperiment_2copy coloredWords;
 
-    public TimerAction(ColoredWordsExperiment coloredWords) {
+    public TimerAction(ColoredWordsExperiment_2copy coloredWords) {
         this.coloredWords = coloredWords;
     }
 
@@ -128,9 +128,9 @@ class TimerAction implements ActionListener {
 }
 
 class TimerAction1 implements ActionListener {
-    ColoredWordsExperiment coloredWords;
+    ColoredWordsExperiment_2copy coloredWords;
 
-    public TimerAction1(ColoredWordsExperiment coloredWords) {
+    public TimerAction1(ColoredWordsExperiment_2copy coloredWords) {
         this.coloredWords = coloredWords;
     }
 

@@ -157,7 +157,7 @@ class X0Game {
 
     void play() {
         this.setupNewGame();
-        System.out.println("Who will make first turn: ");
+        System.out.println("Who will make first turn: (please enter X or O) ");
         char first = this.scanner.next().charAt(0);
         if (first == 'X' || first == '0') {
             this.whoMakeNextTurn = first;
